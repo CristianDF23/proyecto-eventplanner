@@ -14,26 +14,26 @@ ul, li {
   list-style: none;
 }
 
+body {
+  background-color: rgba(255, 204, 212, 0.2745098039);
+  font-family: "Playfair Display", serif;
+}
+
 /* NAVIGATION BAR*/
 .navbar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
-  overflow: hidden;
+  height: 100px;
+  background-color: white;
+  box-shadow: 0 10px 0 10px 5px rgba(0, 0, 0, 0.836);
 }
 .navbar__brand {
+  margin-top: 10px;
+  margin-left: 40px;
   height: 70px;
-  width: 90px;
-  border-radius: 50% 50%;
-  border: 1px solid transparent;
-  margin-left: 20px;
-  background-color: #fff0f6;
-}
-.navbar__brand img {
-  height: 60px;
-  width: auto;
-  object-position: center;
+  width: 80px;
 }
 
 .nav {
@@ -44,14 +44,10 @@ ul, li {
   gap: 3rem;
 }
 .nav-item a {
-  color: whitesmoke;
+  color: black;
   font-size: 1.5rem;
   font-weight: 400;
   transition: color 0.3s ease-out;
-}
-.nav-item a:hover {
-  font-weight: 600;
-  color: #bb7897;
 }
 
 .no-search {
@@ -71,7 +67,7 @@ ul, li {
 .menu-toggle .bar {
   width: 25px;
   height: 3px;
-  background-color: #fed2e5;
+  background-color: #e271a4;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
 }
@@ -102,16 +98,16 @@ ul, li {
     justify-content: space-between;
   }
   .navbar ul {
+    position: fixed;
     display: flex;
     flex-direction: column;
-    position: fixed;
     justify-content: start;
     align-items: start;
-    top: 82px;
+    top: 100px;
     gap: 0.3rem;
-    background-color: rgba(255, 255, 255, 0.9607843137);
+    background-color: white;
     width: 100%;
-    height: calc(100vh - 55px);
+    height: 50%;
     transform: translate(-101%);
     overflow: hidden;
     padding-top: 20px;
@@ -134,20 +130,13 @@ ul, li {
     transform: translate(0%) !important;
   }
 }
-header {
-  height: 100vh;
+.frontPage {
   width: 100%;
-  background-color: black;
-  background-image: url("../../img/frontPage.jpg");
-  background-size: contain;
-  background-attachment: fixed;
+  height: 500px;
+  background-image: url("../../img/boda-emilia-y-miguel-luz-y-fuerza-parana18 de marzo de 202318032023077202348.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-}
-
-@media (min-width: 720px) {
-  header {
-    background-image: url("../../img/frontPage1.jpg");
-  }
+  background-position: center center;
 }
 
 /*# sourceMappingURL=style.css.map */
