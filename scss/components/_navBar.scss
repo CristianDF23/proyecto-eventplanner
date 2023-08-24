@@ -1,0 +1,141 @@
+/* NAVIGATION BAR*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    overflow: hidden;
+
+    &__brand {
+        height: 70px;
+        width: 90px;
+        border-radius: 50% 50%;
+        border: 1px solid transparent;
+        margin-left: 20px;
+        background-color: #fff0f6;
+
+        img{
+            height: 60px;
+            width: auto;
+            object-position: center;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    margin-right: 30px;
+    gap: 3rem;
+
+    &-item a {
+        color: whitesmoke;
+        font-size: 1.5rem;
+        font-weight: 400;
+        transition: color 0.3s ease-out;
+
+        &:hover {
+            font-weight: 600;
+            color: #bb7897;
+        }
+    }
+}
+
+.no-search {
+    transform: translate(0);
+    transition: transform 0.7s ease-in-out;
+}
+
+
+/* MOBILE MENU & ANIMATION */
+
+
+.menu-toggle {
+    justify-self: end;
+    margin-right: 25px;
+    display: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #fed2e5;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+
+#mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#mobile-menu.is-active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu.is-active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Media Queries */
+
+/* Mobile Devices - Phones/Tablets */
+
+@media only screen and (max-width: 720px) {
+    /* MOBILE NAVIGATION */
+
+    .navbar {
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            justify-content: start;
+            align-items: start;
+            top: 82px;
+            gap: 0.3rem;
+            background-color: #fffffff5;
+            width: 100%;
+            height: calc(100vh - 55px);
+            transform: translate(-101%);
+            overflow: hidden;
+            padding-top: 20px;
+            padding-left: 20px;
+
+        }
+
+        li {
+            padding: 15px;
+
+            a {
+                font-size: 1.3rem;
+                color: black;
+
+            }
+        }
+    }
+
+    .menu-toggle,
+    .bar {
+        display: block;
+        cursor: pointer;
+        order: 1;
+    }
+
+    .mobile-nav {
+        transform: translate(0%) !important;
+    }
+}
