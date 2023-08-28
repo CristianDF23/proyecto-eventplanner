@@ -1,5 +1,10 @@
 /* NAVIGATION BAR*/
-
+header{
+    height: 100px;
+    nav{
+        position: fixed;
+    }
+}
 .navbar {
     width: 100%;
     display: flex;
@@ -7,11 +12,10 @@
     align-items: center;
     height: 100px;
     background-color: white;
-    box-shadow: 0 10px 0 10px 5px rgba(0, 0, 0, 0.836);
 
     &__brand {
         margin-top: 10px;
-        margin-left: 40px;
+        margin-left: 20px;
         height: 70px;
         width: 80px;
     }
@@ -26,9 +30,13 @@
 
     &-item a {
         color: black;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 400;
-        transition: color 0.3s ease-out;
+
+        &:hover {
+            border-bottom: 2.5px solid rgb(211, 132, 132);
+            color: rosybrown;
+        }
     }
 }
 
@@ -112,7 +120,6 @@
             a {
                 font-size: 1.3rem;
                 color: black;
-
             }
         }
     }
