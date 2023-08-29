@@ -15,9 +15,6 @@
     text-align: center;
 }
 
-.work{
-    background-color: #ffccd483;
-}
 
 .container {
     margin-top: 30px;
@@ -61,4 +58,11 @@
             @include texto();
         }
     }
+}
+
+span{
+    margin-top: 20px;
+    width: 200px;
+    height: 3px;
+    background-color: rosybrown;
 }
