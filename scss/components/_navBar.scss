@@ -1,6 +1,7 @@
 /* NAVIGATION BAR*/
 header{
     height: 100px;
+    width: 100%;
     nav{
         position: fixed;
     }
@@ -16,6 +17,7 @@ header{
     &__brand {
         margin-top: 10px;
         margin-left: 20px;
+        margin-right: 40px;
         height: 70px;
         width: 80px;
     }
@@ -26,7 +28,7 @@ header{
     justify-content: end;
     align-items: center;
     margin-right: 30px;
-    gap: 3rem;
+    gap: 2rem;
 
     &-item a {
         color: black;

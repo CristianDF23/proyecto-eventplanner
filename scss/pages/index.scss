@@ -15,6 +15,10 @@
     text-align: center;
 }
 
+.work{
+    background-color: #ffccd483;
+}
+
 .container {
     margin-top: 30px;
     display: flex;
@@ -30,12 +34,22 @@
         @include texto();
     }
 
-    article {
+    &__img {
+        height: 50px;
+        width: 60px;
+    }
+
+    article, div {
         margin-top: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        img {
+            height: 50px;
+            width: 60px;
+        }
 
         h3 {
             color: rgb(81, 97, 119);

@@ -22,6 +22,7 @@ body {
 /* NAVIGATION BAR*/
 header {
   height: 100px;
+  width: 100%;
 }
 header nav {
   position: fixed;
@@ -38,6 +39,7 @@ header nav {
 .navbar__brand {
   margin-top: 10px;
   margin-left: 20px;
+  margin-right: 40px;
   height: 70px;
   width: 80px;
 }
@@ -47,7 +49,7 @@ header nav {
   justify-content: end;
   align-items: center;
   margin-right: 30px;
-  gap: 3rem;
+  gap: 2rem;
 }
 .nav-item a {
   color: black;
@@ -166,6 +168,10 @@ header nav {
     border-bottom-left-radius: 40px;
   }
 }
+.work {
+  background-color: rgba(255, 204, 212, 0.5137254902);
+}
+
 .container {
   margin-top: 30px;
   display: flex;
@@ -188,19 +194,27 @@ header nav {
   text-align: justify;
   padding: 10px;
 }
-.container article {
+.container__img {
+  height: 50px;
+  width: 60px;
+}
+.container article, .container div {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.container article h3 {
+.container article img, .container div img {
+  height: 50px;
+  width: 60px;
+}
+.container article h3, .container div h3 {
   color: rgb(81, 97, 119);
   font-size: 1.4rem;
   font-weight: 600;
 }
-.container article p {
+.container article p, .container div p {
   max-width: 720px;
   margin-top: 15px;
   font-size: 1rem;
