@@ -36,7 +36,8 @@
         width: 60px;
     }
 
-    article, div {
+    article,
+    div {
         margin-top: 30px;
         display: flex;
         flex-direction: column;
@@ -60,9 +61,97 @@
     }
 }
 
-span{
+span {
     margin-top: 20px;
     width: 200px;
     height: 3px;
     background-color: rosybrown;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(153, 58, 117);
+
+    &__information {
+        margin: 20px;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+            margin: 5px;
+
+            li {
+                font-size: 1.1rem;
+                color: whitesmoke;
+                display: flex;
+                gap:1rem;
+
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    &__title {
+        @include titulo();
+        color: whitesmoke;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    @mixin input-area {
+        width: 300px;
+        padding: 12px 20px 12px 40px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: white;
+        background-position: 10px 12px;
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+
+    $inputs: (
+        name: url("../img/name.png"),
+        phone: url("../img/tel.png"),
+        email: url("../img/email.png"),
+        message: url("../img/message.png"),
+    );
+
+@each $name,
+$value in $inputs {
+    .form-input__#{$name} {
+        @include input-area;
+        background-image: $value;
+    }
+}
+
+.form-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+
+    &__send {
+        background-image: url("../img/1.png");
+        background-repeat: no-repeat;
+        background-color: transparent;
+        color: transparent;
+        border: none;
+        width: 34px;
+        height: 31px;
+        cursor: pointer;
+    }
+}
 }
