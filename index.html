@@ -7,16 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,600;10..48,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body>
-    <header>
+    <header id="top">
         <nav class="navbar">
             <img class="navbar__brand" src="./img/logo.jpeg" alt="Company Logo">
             <div class="menu-toggle" id="mobile-menu">
@@ -25,8 +24,8 @@
                 <span class="bar"></span>
             </div>
             <ul class="nav no-search">
-                <li class="nav-item"><a href="#">¿Quienes Somos?</a></li>
-                <li class="nav-item"><a href="#">¿Como Trabajamos?</a></li>
+                <li class="nav-item"><a href="#quienesSomos">¿Quienes Somos?</a></li>
+                <li class="nav-item"><a href="#queHacemos">¿Como Trabajamos?</a></li>
                 <li class="nav-item"><a href="#">Servicios</a></li>
                 <li class="nav-item"><a href="#">Galeria</a></li>
                 <li class="nav-item"><a href="#">Contacto</a></li>
@@ -37,10 +36,9 @@
         <div class="frontPage">
             <h1 class="frontPage__title">Organizamos tu evento!</h1>
         </div>
-
         <section class="container">
             <img class="container__img" src="./img/us.png" alt="">
-            <h2 class="container__title">ME PRESENTO!</h2>
+            <h2 id="quienesSomos" class="container__title">ME PRESENTO!</h2>
             <p class="container__text">Bienvenidos! Soy Marian, apasionada de la organización de eventos, creadora de
                 Marianelab.eventplanner, el espacio para planificar un evento único e irrepetible.
                 Mi compromiso es brindarles un servicio excepcional en cada etapa del evento.
@@ -48,7 +46,7 @@
                 detalles y asegurarme de que ese día no tengas que preocuparte por nada mas que disfrutar!</p>
         </section>
 
-        <section class="container work">
+        <section id="queHacemos" class="container work">
             <img class="container__img" src="./img/work.png" alt="">
             <h2 class="container__title">¿QUE HACEMOS?</h2>
             <p class="container__text">Marianelab. Pone a tu alcance un equipo de profesionales con el único objetivo de
@@ -83,72 +81,65 @@
 
         <section class="container">
             <h2 class="container__title">SERVICIOS</h2>
-            <div>
-                <img src="./img/wedding.png" alt="">
-                <h3>Bodas</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias, beatae deserunt ab incidunt eaque
-                    ex, necessitatibus praesentium suscipit ipsam ducimus explicabo architecto dolorem deleniti veniam
-                    sunt cumque, voluptate possimus.</p>
-            </div>
-            <div>
-                <img src="./img/fifteen.png" alt="">
-                <h3>15 Años</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quisquam laudantium assumenda
-                    repudiandae porro pariatur, ut provident a, dolores laboriosam atque? Natus aliquid nostrum
-                    necessitatibus obcaecati autem id eum reiciendis!</p>
-            </div>
-            <div>
-                <img src="./img/reception.png" alt="">
-                <h3>Recepciones</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, magni consequatur autem nulla
-                    expedita consectetur in numquam? Nulla enim eaque, quaerat non voluptatum quia. Quasi vero ullam
-                    aperiam molestias? Deleniti.</p>
-            </div>
-            <div>
-                <img src="./img/aniversario.png" alt="">
-                <h3>Aniversarios</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, magni consequatur autem nulla
-                    expedita consectetur in numquam? Nulla enim eaque, quaerat non voluptatum quia. Quasi vero ullam
-                    aperiam molestias? Deleniti.</p>
-            </div>
-            <div>
-                <img src="./img/birthday.png" alt="">
-                <h3>Cumpleaños</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, magni consequatur autem nulla
-                    expedita consectetur in numquam? Nulla enim eaque, quaerat non voluptatum quia. Quasi vero ullam
-                    aperiam molestias? Deleniti.</p>
-            </div>
-        </section>
-        <section class="contact">
-            <h2 class="contact__title">CONTACTO</h2>
-            <div class="contact__information">
-                <ul>
-                    <li>
-                        <img src="./img/ub.png" alt="">Nos Encontramos En Parana, Entre Ríos
-                    </li>
-                    <li>
-                        <img src="./img/tl.png" alt="">343-5253742
-                    </li>
-                    <li>
-                        <img src="./img/gmail.png" alt="">marianelab.eventplanner@gmail.com
-                    </li>
+            <div class="services">
+                <ul class="services__list">
+                    <ol >BODAS</ol>
+                    <ol>CUMPLEAÑOS</ol>
+                    <ol>XV AÑOS</ol>
+                    <ol>RECEPCIONES</ol>
+                    <ol>ANIVERSARIOS</ol>
+                    <ol>EVENTOS CORPORATIVOS</ol>
                 </ul>
             </div>
-            <form action="" class="form-input">
-                <input class="form-input__name" type="text" name="Name" id="Name" placeholder="Nombre Completo">
-                <input class="form-input__phone" type="tel" name="Tel" id="Tel" placeholder="Teléfono">
-                <input class="form-input__email" type="text" name="Email" id="Email" placeholder="correo@correo.com">
-                <textarea class="form-input__message" name="Consulta" id="Consulta" cols="30" rows="10"
-                    placeholder="Ingrese su Consulta"></textarea>
-                <input class="form-input__send" type="submit" value="ENVIAR">
+        </section>
+        <section class="gallery">
+            <h2 class="container__title">GALERIA</h2>
+            <div class="gallery__container">
+                <img class="img1" src="./img/2.jpg" alt="">
+                <img class="img2" src="./img/3.jpg" alt="">
+                <img class="img3" src="./img/4.jpg" alt="">
+                <img class="img4" src="./img/5.jpg" alt="">
+                <img class="img5" src="./img/6.jpg" alt="">
+                <img class="img6" src="./img/7.jpg" alt="">
+                <img class="img7" src="./img/8.jpg" alt="">
+                <img class="img8" src="./img/9.jpg" alt="">
+                <img class="img9" src="./img/10.jpg" alt="">
+                <img class="img10" src="./img/11.jpg" alt="">
+                <img class="img11" src="./img/12.jpg" alt="">
+                <img class="img12" src="./img/13.jpg" alt="">
+                <img class="img13" src="./img/14.jpg" alt="">
+                <img class="img14" src="./img/15.jpg" alt="">
+                <img class="img15" src="./img/16.jpg" alt="">  
+            </div>
+        </section>
+        <section class="container-contact">
+            <div class="contact">
+                <h2 class="contact__title">CONTACTO</h2>
+                <div class="contact__information">
+                    <ul>
+                        <li>
+                            <img src="./img/ub.png" alt="">Nos Encontramos En Parana, Entre Ríos
+                        </li>
+                        <li>
+                            <img src="./img/tl.png" alt="">343-5253742
+                        </li>
+                        <li>
+                            <img src="./img/gmail.png" alt="">marianelab.eventplanner@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <form action="" class="form-input">
+                    <input class="form-input__name" type="text" name="Name" id="Name" placeholder="Nombre Completo">
+                    <input class="form-input__phone" type="tel" name="Tel" id="Tel" placeholder="Teléfono">
+                    <input class="form-input__email" type="text" name="Email" id="Email"
+                        placeholder="correo@correo.com">
+                    <textarea class="form-input__message" name="Consulta" id="Consulta" cols="30" rows="10"
+                        placeholder="Ingrese su Consulta"></textarea>
+                    <input class="form-input__send" type="submit" value="ENVIAR">
+            </div>
         </section>
 
     </main>
-    <footer>
-        <section>
-            <img src="./img/logo.jpeg" alt="">
-        </section>
-    </footer>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="./js/script.js"></script>

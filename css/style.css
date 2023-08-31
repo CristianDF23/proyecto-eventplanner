@@ -16,7 +16,11 @@ li {
 }
 
 body {
-  font-family: "Playfair Display", serif;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* NAVIGATION BAR*/
@@ -26,6 +30,7 @@ header {
 }
 header nav {
   position: fixed;
+  z-index: 3;
 }
 
 .navbar {
@@ -168,6 +173,10 @@ header nav {
     border-bottom-left-radius: 40px;
   }
 }
+.work {
+  background-color: #fff0f6;
+}
+
 .container {
   margin-top: 30px;
   display: flex;
@@ -191,8 +200,8 @@ header nav {
   padding: 10px;
 }
 .container__img {
-  height: 50px;
-  width: 60px;
+  height: 60px;
+  width: 70px;
 }
 .container article,
 .container div {
@@ -204,8 +213,8 @@ header nav {
 }
 .container article img,
 .container div img {
-  height: 50px;
-  width: 60px;
+  height: 60px;
+  width: 70px;
 }
 .container article h3,
 .container div h3 {
@@ -230,12 +239,66 @@ span {
   background-color: rosybrown;
 }
 
+.container-contact {
+  background-image: url("../img/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+.container-contact::before {
+  background-color: rgba(0, 0, 0, 0.55);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.services {
+  margin-bottom: 30px;
+}
+.services__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 2rem;
+  font-weight: 600;
+  color: rgb(196, 125, 125);
+}
+
+.gallery__container img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .gallery__container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    gap: 1rem;
+    margin: 30px;
+  }
+  .gallery__container img {
+    object-fit: cover;
+    filter: brightness(0.3);
+  }
+  .gallery__container img:hover {
+    filter: none;
+    transform: scale(1.2);
+    z-index: 3;
+  }
+}
 .contact {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(153, 58, 117);
+  z-index: 3;
 }
 .contact__information {
   margin: 20px;
@@ -249,6 +312,7 @@ span {
 }
 .contact__information ul li {
   font-size: 1.1rem;
+  font-weight: 600;
   color: whitesmoke;
   display: flex;
   gap: 1rem;
@@ -267,7 +331,8 @@ span {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.contact .form-input__name {
+
+.form-input__name {
   width: 300px;
   padding: 12px 20px 12px 40px;
   box-sizing: border-box;
@@ -275,12 +340,14 @@ span {
   border-radius: 5px;
   font-size: 16px;
   background-color: white;
-  background-position: 10px 12px;
+  background-position: 6px 9px;
   background-repeat: no-repeat;
-  background-size: 20px 20px;
+  background-size: 30px 30px;
+  font-family: "Bricolage Grotesque", sans-serif;
   background-image: url("../img/name.png");
 }
-.contact .form-input__phone {
+
+.form-input__phone {
   width: 300px;
   padding: 12px 20px 12px 40px;
   box-sizing: border-box;
@@ -288,12 +355,14 @@ span {
   border-radius: 5px;
   font-size: 16px;
   background-color: white;
-  background-position: 10px 12px;
+  background-position: 6px 9px;
   background-repeat: no-repeat;
-  background-size: 20px 20px;
+  background-size: 30px 30px;
+  font-family: "Bricolage Grotesque", sans-serif;
   background-image: url("../img/tel.png");
 }
-.contact .form-input__email {
+
+.form-input__email {
   width: 300px;
   padding: 12px 20px 12px 40px;
   box-sizing: border-box;
@@ -301,12 +370,14 @@ span {
   border-radius: 5px;
   font-size: 16px;
   background-color: white;
-  background-position: 10px 12px;
+  background-position: 6px 9px;
   background-repeat: no-repeat;
-  background-size: 20px 20px;
+  background-size: 30px 30px;
+  font-family: "Bricolage Grotesque", sans-serif;
   background-image: url("../img/email.png");
 }
-.contact .form-input__message {
+
+.form-input__message {
   width: 300px;
   padding: 12px 20px 12px 40px;
   box-sizing: border-box;
@@ -314,12 +385,14 @@ span {
   border-radius: 5px;
   font-size: 16px;
   background-color: white;
-  background-position: 10px 12px;
+  background-position: 6px 9px;
   background-repeat: no-repeat;
-  background-size: 20px 20px;
+  background-size: 30px 30px;
+  font-family: "Bricolage Grotesque", sans-serif;
   background-image: url("../img/message.png");
 }
-.contact .form-input {
+
+.form-input {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -327,14 +400,15 @@ span {
   align-items: center;
   gap: 0.6rem;
 }
-.contact .form-input__send {
-  background-image: url("../img/1.png");
-  background-repeat: no-repeat;
-  background-color: transparent;
-  color: transparent;
+.form-input__send {
   border: none;
-  width: 34px;
-  height: 31px;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #01486e;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
 }
 
