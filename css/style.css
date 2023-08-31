@@ -31,7 +31,7 @@ header {
 }
 header nav {
   position: fixed;
-  z-index: 3;
+  z-index: 1;
 }
 
 .navbar {
@@ -160,8 +160,8 @@ header nav {
   background-position: center center;
 }
 .frontPage__title {
-  background-color: rgba(220, 20, 60, 0.76);
-  max-width: 720px;
+  background-color: rgba(226, 113, 164, 0.5882352941);
+  width: 100%;
   font-size: 2.5rem;
   color: white;
   text-align: center;
@@ -170,8 +170,6 @@ header nav {
 @media (min-width: 440px) {
   .frontPage__title {
     font-size: 3.5rem;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
   }
 }
 .work {

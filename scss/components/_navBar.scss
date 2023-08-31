@@ -1,12 +1,15 @@
 /* NAVIGATION BAR*/
-header{
+header {
     height: 100px;
     width: 100%;
-    nav{
+
+    nav {
         position: fixed;
-        z-index: 3;
+        z-index: 1;
+
     }
 }
+
 .navbar {
     width: 100%;
     display: flex;
