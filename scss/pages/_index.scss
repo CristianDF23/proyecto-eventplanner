@@ -127,6 +127,7 @@ span {
             &:hover{
                 filter:none;
                 transform: scale(1.2);
+                transition:all .5s ease-in-out;
                 z-index: 3;
             }
         }
