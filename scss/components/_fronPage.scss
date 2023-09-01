@@ -1,28 +1,40 @@
 /*FRONTPAGE*/
 
-.frontPage{
-    display: flex;
-    justify-content: end;
-    align-items:flex-end;
+.frontPage {
+    position: relative;
     width: 100%;
-    height: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url('../img/frontPage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:center center;
+    background-position: center center;
 
-    &__title{
-        background-color: #e271a496;
+    &::before {
+        background-color: rgba(0, 0, 0, 0.50);
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__title {
+        z-index: 3;
         width: 100%;
-        font-size: 2.5rem;
+        font-size: 3rem;
+        letter-spacing:2px;
+        line-height: 80px;
         color: white;
         text-align: center;
     }
 }
 
-@media (min-width:440px){
-    .frontPage__title{
+@media (min-width:440px) {
+    .frontPage__title {
         font-size: 3.5rem;
     }
 }
-

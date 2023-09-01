@@ -1,227 +1,99 @@
-@mixin texto {
-    max-width: 720px;
-    margin-top: 15px;
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: justify;
-    padding: 10px;
+@mixin title{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color:crimson;
 }
 
-@mixin titulo {
-    margin-top: 15px;
-    font-weight: 600;
-    font-size: 1.7rem;
-    color: rgb(196, 125, 125);
+@mixin text{
+    width: 360px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+@mixin container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-.work {
-    background-color: #fff0f6;
-}
-
-.container {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &__title {
-        @include titulo();
-    }
-
-    &__text {
-        @include texto();
-    }
-
-    &__img {
-        height: 60px;
-        width: 70px;
-    }
-
-    article,
-    div {
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            height: 60px;
-            width: 70px;
-        }
-
-        h3 {
-            color: rgb(81, 97, 119);
-            font-size: 1.4rem;
-            font-weight: 600;
-        }
-
-        p {
-            @include texto();
-        }
-    }
-}
-
-span {
-    margin-top: 20px;
-    width: 200px;
+.line{
     height: 3px;
-    background-color: rosybrown;
+    width: 50px;
+    background-color: crimson;
+    margin-bottom: 30px
 }
 
-.container-contact {
-    background-image: url("../img/1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    position: relative;
+.presentation-container{
+    @include container();
+    &__title{
+        @include title();
+    }
 
-    &::before {
-        background-color: rgba(0, 0, 0, 0.55);
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-
+    &__text{
+        @include text();
+        margin-bottom: 20px;
     }
 }
 
+.work-container{
+    background-color: #ffe8cd;
+    @include container();
 
-.services {
-    margin-bottom: 30px;
+    &__title{
+        @include title();
+    }
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        gap: 2rem;
-        font-weight: 600;
-        color: rgb(196, 125, 125);
+    &__text{
+        @include text();
     }
 }
 
-.gallery__container {
-    img {
-        height: 100%;
-        width: 100%;
+.way-container{
+    @include container();
+
+    &__title{
+        @include title();
+        width: 300px;
+        font-size: 1.5rem;
     }
 }
 
-@media (min-width:720px) {
-    .gallery__container {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: auto;
-        gap: 1rem;
-        margin: 30px;
+.way-article{
+    @include container();
 
-        img {
-            object-fit: cover;
-            filter: brightness(0.30);
-
-            &:hover{
-                filter:none;
-                transform: scale(1.2);
-                transition:all .5s ease-in-out;
-                z-index: 3;
-            }
-        }
-    }
-}
-
-.contact {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-
-    &__information {
-        margin: 20px;
-
-        ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 2rem;
-            margin: 5px;
-
-            li {
-                font-size: 1.1rem;
-                font-weight: 600;
-                color: whitesmoke;
-                display: flex;
-                gap: 1rem;
-
-                img {
-                    width: 30px;
-                    height: 30px;
-                }
-            }
-        }
+    &__img{
+        height: 70px;
+        margin-top: 50px;
     }
 
-    &__title {
-        @include titulo();
-        color: whitesmoke;
+    &__title{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
         margin-top: 10px;
-        margin-bottom: 10px;
+        color: crimson
+    }
+
+    &__text{
+        @include text();
     }
 }
 
+.services-container{
+    @include container();
 
-@mixin input-area {
-    width: 300px;
-    padding: 12px 20px 12px 40px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: white;
-    background-position: 6px 9px;
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    font-family: 'Bricolage Grotesque', sans-serif;
-}
-
-$inputs: (
-    name: url("../img/name.png"),
-    phone: url("../img/tel.png"),
-    email: url("../img/email.png"),
-    message: url("../img/message.png"),
-);
-
-@each $name,
-$value in $inputs {
-    .form-input__#{$name} {
-        @include input-area;
-        background-image: $value;
+    &__title{
+        @include title();
     }
 }
 
-.form-input {
-    width: 100%;
+.card-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.6rem;
-
-    &__send {
-        border: none;
-        width: 200px;
-        height: 30px;
-        border-radius: 5px;
-        background-color: #01486e;
-        color: white;
-        font-size: 1rem;
-        font-weight: 600;
-        cursor: pointer;
-    }
+    gap: 3rem;
 }

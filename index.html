@@ -3,15 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Event Planner</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,600;10..48,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-
+    <title>Event Planner</title>
 </head>
 
 <body>
@@ -24,8 +23,8 @@
                 <span class="bar"></span>
             </div>
             <ul class="nav no-search">
-                <li class="nav-item"><a href="#quienesSomos">¿Quienes Somos?</a></li>
-                <li class="nav-item"><a href="#queHacemos">¿Como Trabajamos?</a></li>
+                <li class="nav-item"><a href="#">Me Presento</a></li>
+                <li class="nav-item"><a href="#">Que Hacemos?</a></li>
                 <li class="nav-item"><a href="#">Servicios</a></li>
                 <li class="nav-item"><a href="#">Galeria</a></li>
                 <li class="nav-item"><a href="#">Contacto</a></li>
@@ -33,112 +32,136 @@
         </nav>
     </header>
     <main>
-        <div class="frontPage">
+        <section class="frontPage">
             <h1 class="frontPage__title">Organizamos tu evento!</h1>
-        </div>
-        <section id="quienesSomos" class="container">
-            <h2 class="container__title">ME PRESENTO!</h2>
-            <p class="container__text">Bienvenidos! Soy Marian, apasionada de la organización de eventos, creadora de
+        </section>
+        <section class="presentation-container">
+            <h2 class="presentation-container__title">ME PRESENTO!</h2>
+            <span class="line"></span>
+            <img class="presentation-container__img" src="" alt="">
+            <p class="presentation-container__text">Bienvenidos! Soy Marian, apasionada de la organización de eventos,
+                creadora de
                 Marianelab.eventplanner, el espacio para planificar un evento único e irrepetible.
                 Mi compromiso es brindarles un servicio excepcional en cada etapa del evento.
                 Como organizadora de eventos, mi trabajo es ayudarte a encontrar los proveedores correctos, cuidar los
                 detalles y asegurarme de que ese día no tengas que preocuparte por nada mas que disfrutar!</p>
         </section>
-
-        <section id="queHacemos" class="container work">
-            <h2 class="container__title">¿QUE HACEMOS?</h2>
-            <p class="container__text">Marianelab. Pone a tu alcance un equipo de profesionales con el único objetivo de
+        <section class="work-container">
+            <h2 class="work-container__title">¿QUE HACEMOS?</h2>
+            <span class="line"></span>
+            <p class="work-container__text">Marianelab. Pone a tu alcance un equipo de profesionales con el único
+                objetivo de
                 diseñar un evento inolvidable.</p>
-            <h2 class="container__title container__title--borderBottom ">NUESTRA FORMA DE TRABAJAR</h2>
-            <span></span>
-            <article>
-                <img src="./img/interview.png" alt="">
-                <h3>Entrevista</h3>
-                <p>Concretamos una entrevista donde podremos conocernos y conocer que es lo que necesitas y cómo podemos
-                    ayudarte</p>
-            </article>
-            <article>
-                <img src="./img/idea.png" alt="">
-                <h3>Propuesta</h3>
-                <p>En base a esto el equipo de Marianelab. Realiza una propuesta personalizada de acuerdo a tus
-                    necesidades.</p>
-            </article>
-            <article>
-                <img src="./img/desing.png" alt="">
-                <h3>Creación</h3>
-                <p>Una vez aprobada la propuesta, comenzamos la planificación de un evento inolvidable a través de un
-                    calendario específico para tu evento.</p>
-            </article>
-            <article>
-                <img src="./img/event.png" alt="">
-                <h3>Implementación</h3>
-                <p>El día de la puesta en escena! Estaremos trabajando junto a todo el equipo de Marianelab.
-                    Asegurándonos de que todo salga perfecto.</p>
-            </article>
-        </section>
 
-        <section class="container">
-            <h2 class="container__title">SERVICIOS</h2>
-            <div class="services">
-                <ul class="services__list">
-                    <ol >BODAS</ol>
-                    <ol>CUMPLEAÑOS</ol>
-                    <ol>XV AÑOS</ol>
-                    <ol>RECEPCIONES</ol>
-                    <ol>ANIVERSARIOS</ol>
-                    <ol>EVENTOS CORPORATIVOS</ol>
-                </ul>
-            </div>
+            <section class="way-container">
+                <h2 class="way-container__title">NUESTRA FORMA DE TRABAJAR</h2>
+                <span class="line"></span>
+                <article class="way-article">
+                    <img class="way-article__img" src="./img/interview.png" alt="">
+                    <h3 class="way-article__title">Entrevista</h3>
+                    <p class="way-article__text">Concretamos una entrevista donde podremos conocernos y conocer que es
+                        lo que necesitas y cómo
+                        podemos
+                        ayudarte</p>
+                </article>
+                <article class="way-article">
+                    <img class="way-article__img" src="./img/idea.png" alt="">
+                    <h3 class="way-article__title">Propuesta</h3>
+                    <p class="way-article__text">En base a esto el equipo de Marianelab. Realiza una propuesta
+                        personalizada de acuerdo a tus
+                        necesidades.</p>
+                </article>
+                <article class="way-article">
+                    <img class="way-article__img" src="./img/desing.png" alt="">
+                    <h3 class="way-article__title">Creación</h3>
+                    <p class="way-article__text">Una vez aprobada la propuesta, comenzamos la planificación de un evento
+                        inolvidable a través de
+                        un
+                        calendario específico para tu evento.</p>
+                </article>
+                <article class="way-article">
+                    <img class="way-article__img" src="./img/event.png" alt="">
+                    <h3 class="way-article__title">Implementación</h3>
+                    <p class="way-article__text">El día de la puesta en escena! Estaremos trabajando junto a todo el
+                        equipo de Marianelab.
+                        Asegurándonos de que todo salga perfecto.</p>
+                </article>
+            </section>
         </section>
-        <section class="gallery">
-            <h2 class="container__title">GALERIA</h2>
-            <div class="gallery__container">
-                <img class="img1" src="./img/2.jpg" alt="">
-                <img class="img2" src="./img/3.jpg" alt="">
-                <img class="img3" src="./img/4.jpg" alt="">
-                <img class="img4" src="./img/5.jpg" alt="">
-                <img class="img5" src="./img/6.jpg" alt="">
-                <img class="img6" src="./img/7.jpg" alt="">
-                <img class="img7" src="./img/8.jpg" alt="">
-                <img class="img8" src="./img/9.jpg" alt="">
-                <img class="img9" src="./img/10.jpg" alt="">
-                <img class="img10" src="./img/11.jpg" alt="">
-                <img class="img11" src="./img/12.jpg" alt="">
-                <img class="img12" src="./img/13.jpg" alt="">
-                <img class="img13" src="./img/14.jpg" alt="">
-                <img class="img14" src="./img/15.jpg" alt="">
-                <img class="img15" src="./img/16.jpg" alt="">  
-            </div>
-        </section>
-        <section class="container-contact">
-            <div class="contact">
-                <h2 class="contact__title">CONTACTO</h2>
-                <div class="contact__information">
-                    <ul>
-                        <li>
-                            <img src="./img/ub.png" alt="">Nos Encontramos En Parana, Entre Ríos
-                        </li>
-                        <li>
-                            <img src="./img/tl.png" alt="">343-5253742
-                        </li>
-                        <li>
-                            <img src="./img/gmail.png" alt="">marianelab.eventplanner@gmail.com
-                        </li>
-                    </ul>
+        <section class="services-container">
+            <h2 class="services-container__title">SERVICIOS</h2>
+            <span class="line"></span>
+            <section class="card-container">
+                <div class="card">
+                    <div class="content">
+                        <div class="front-one">
+                            <h4 class="front-one__title">BODAS</h4>
+                        </div>
+                        <div class="back">
+                            <p class="back__text">Tu día soñado cobra vida. Creación personalizada de bodas encantadoras
+                                y
+                                personalizadas para un comienzo inolvidable.</p>
+                        </div>
+                    </div>
                 </div>
-                <form action="" class="form-input">
-                    <input class="form-input__name" type="text" name="Name" id="Name" placeholder="Nombre Completo">
-                    <input class="form-input__phone" type="tel" name="Tel" id="Tel" placeholder="Teléfono">
-                    <input class="form-input__email" type="text" name="Email" id="Email"
-                        placeholder="correo@correo.com">
-                    <textarea class="form-input__message" name="Consulta" id="Consulta" cols="30" rows="10"
-                        placeholder="Ingrese su Consulta"></textarea>
-                    <input class="form-input__send" type="submit" value="ENVIAR">
-            </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front-two">
+                            <h4 class="front-two__title">XV AÑOS</h4>
+                        </div>
+                        <div class="back">
+                            <p class="back__text">Celebra tus 15 años con un evento mágico y único que refleje tu estilo
+                                y personalidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front-three">
+                            <h4 class="front-three__title">CUMPLEAÑOS</h4>
+                        </div>
+                        <div class="back">
+                            <p class="back__text">Festeja la vida con nosotros. Cumpleaños llenos de diversión, detalles
+                                especiales y alegría contagiosa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front-four">
+                            <h4 class="front-four__title">ANIVERSARIOS</h4>
+                        </div>
+                        <div class="back">
+                            <p class="back__text">Celebra el amor con elegancia. Diseñamos aniversarios personalizados
+                                que marcan momentos inolvidables para parejas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front-five">
+                            <h4 class="front-five__title">RECEPCIONES</h4>
+                        </div>
+                        <div class="back">
+                            <p class="back__text">Transforma espacios en escenarios perfectos. Experiencias
+                                excepcionales y detalladas en cada tipo de recepción.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="front-six">
+                            <h4 class="front-six__title">EVENTOS CORPORATIVOS</h4>
+                        </div>
+                        <div class="back">
+                            <p class="back__text">Impulsa tu imagen. Organizamos eventos corporativos de primer
+                                nivel que cautivan, informan y dejan huella duradera.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
-
     </main>
-
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="./js/script.js"></script>
 </body>

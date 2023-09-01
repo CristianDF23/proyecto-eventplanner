@@ -1,0 +1,116 @@
+.card {
+    width: 200px;
+    height: 270px;
+    perspective: 500px;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .content {
+    transform: rotateY(180deg);
+    transition: transform 2s;
+}
+
+@mixin front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+
+@mixin frontTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+    color: crimson;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.front-one {
+    @include front();
+    background-image: url("https://w0.peakpx.com/wallpaper/976/492/HD-wallpaper-wedding-day-mcouple-bouquet-rose-love-flower-marriage-white-wedding.jpg");
+
+    &__title {
+        @include frontTitle();
+    }
+}
+
+.front-two {
+    @include front();
+    background-image: url("https://i.pinimg.com/474x/d2/21/e2/d221e2dcb620f62036c958c36eeb72db.jpg");
+
+    &__title {
+        @include frontTitle();
+    }
+}
+
+.front-three {
+    @include front();
+    background-image: url("https://i.pinimg.com/1200x/f3/74/29/f37429fc43282d521cdef72326da16b1.jpg");
+
+    &__title {
+        @include frontTitle();
+    }
+}
+
+.front-four {
+    @include front();
+    background-image: url("https://1.bp.blogspot.com/-qmNMoGSWuic/X4kDiWRPTEI/AAAAAAABRZA/rdjm39GlSZEH0oFb1zvAYW7yMeR2dWoCwCLcBGAsYHQ/s0/9d571ccbf52f876998b4f5da6c6e26ff.jpg");
+
+    &__title {
+        @include frontTitle();
+    }
+}
+
+.front-five {
+    @include front();
+    background-image: url("https://i.pinimg.com/originals/ba/48/38/ba48383d7ef0bef2f78e10fea582024c.jpg");
+
+    &__title {
+        @include frontTitle();
+    }
+}
+
+
+.front-six {
+    @include front();
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/801/855/desktop-wallpaper-private-event-management-corporate-event.jpg");
+
+    &__title {
+        @include frontTitle();
+        font-size: 1.40rem;
+    }
+}
+
+
+.back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    background: rgb(211, 82, 108);
+    color: white;
+    transform: rotateY(180deg);
+
+    &__text {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+}
