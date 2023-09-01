@@ -1,18 +1,18 @@
-@mixin title{
+@mixin title {
     margin-top: 50px;
     margin-bottom: 20px;
     font-size: 2rem;
-    color:crimson;
+    color: crimson;
 }
 
-@mixin text{
-    width: 360px;
+@mixin text {
+    max-width: 500px;
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: .5px;
 }
 
-@mixin container{
+@mixin container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,77 +20,214 @@
     text-align: center;
 }
 
-.line{
+@media (min-width:720px){
+    p{
+        text-align: justify;
+    }
+}
+
+.line {
     height: 3px;
     width: 50px;
     background-color: crimson;
     margin-bottom: 30px
 }
 
-.presentation-container{
+/*-PRESENTATION-*/
+
+.presentation-container {
     @include container();
-    &__title{
+
+    &__title {
         @include title();
     }
 
-    &__text{
+    &__text {
         @include text();
         margin-bottom: 20px;
     }
 }
 
-.work-container{
+/*-VIEW TABLET AND DESKTOP*/
+
+@media (min-width:720px) {
+    .presentation-container {
+        margin-bottom: 30px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
+        grid-template-areas:
+            'title title title title'
+            'line line line line'
+            'img img text text'
+            'img img text text'
+            'img img text text';
+
+        &__title {
+            grid-area: title;
+        }
+
+        &__img {
+            margin-right: 15px;
+            grid-area: img;
+            width: 350px;
+            height: 350px;
+            border: 1px solid black;
+            border-radius: 170px 170px;
+        }
+
+        &__text {
+            grid-area: text;
+            margin-right: 7px;
+        }
+    }
+
+    #line1 {
+        grid-area: line;
+
+    }
+}
+
+/*-WORK METHOD-*/
+
+.work-container {
     background-color: #ffe8cd;
     @include container();
 
-    &__title{
+    &__title {
         @include title();
     }
 
-    &__text{
+    &__text {
         @include text();
     }
 }
 
-.way-container{
+.way-container {
     @include container();
 
-    &__title{
+    &__title {
         @include title();
         width: 300px;
         font-size: 1.5rem;
     }
 }
 
-.way-article{
+.way-article {
     @include container();
 
-    &__img{
+    &__img {
         height: 70px;
         margin-top: 50px;
     }
 
-    &__title{
+    &__title {
         font-size: 1.2rem;
         margin-bottom: 20px;
         margin-top: 10px;
         color: crimson
     }
 
-    &__text{
+    &__text {
         @include text();
     }
 }
 
-.services-container{
+/*-VIEW TABLET AND DESKTOP*/
+
+@media (min-width:720px) {
+    .way-container {
+        display: grid;
+        gap: 1rem;
+        column-gap: 2rem;
+        justify-items: center;
+        align-items: start;
+        grid-template-areas:
+            'tit tit tit tit'
+            'lin lin lin lin'
+            'int int id id'
+            'int int id id'
+            'des des eve eve'
+            'des des eve eve';
+
+        &__title {
+            grid-area: tit;
+        }
+
+        #interview {
+            grid-area: int;
+        }
+
+        #idea {
+            grid-area: id;
+        }
+
+        #desing {
+            grid-area: des;
+        }
+
+        #event {
+            grid-area: eve;
+        }
+    }
+
+    #line2 {
+        grid-area: lin;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .way-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: grid;
+        gap: 1rem;
+        column-gap: 2rem;
+        justify-items: center;
+        align-items: start;
+        grid-template-areas:
+            'tit tit tit tit'
+            'lin lin lin lin'
+            'int id des eve'
+            'int id des eve';
+
+        &__title {
+            grid-area: tit;
+        }
+
+        #interview {
+            grid-area: int;
+        }
+
+        #idea {
+            grid-area: id;
+        }
+
+        #desing {
+            grid-area: des;
+        }
+
+        #event {
+            grid-area: eve;
+        }
+    }
+
+    #line2 {
+        grid-area: lin;
+    }
+}
+
+.services-container {
     @include container();
 
-    &__title{
+    &__title {
         @include title();
     }
 }
 
-.card-container{
+.card-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
