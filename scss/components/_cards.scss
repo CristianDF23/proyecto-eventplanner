@@ -16,7 +16,7 @@
 
 .card:hover .content {
     transform: rotateY(180deg);
-    transition: transform 2s;
+    transition: transform 1s;
 }
 
 @mixin front {

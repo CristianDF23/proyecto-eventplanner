@@ -20,8 +20,8 @@
     text-align: center;
 }
 
-@media (min-width:720px){
-    p{
+@media (min-width:720px) {
+    p {
         text-align: justify;
     }
 }
@@ -138,6 +138,7 @@
 
 @media (min-width:720px) {
     .way-container {
+        margin-bottom: 30px;
         display: grid;
         gap: 1rem;
         column-gap: 2rem;
@@ -221,6 +222,7 @@
 
 .services-container {
     @include container();
+    margin-bottom: 30px;
 
     &__title {
         @include title();
@@ -233,4 +235,93 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+}
+
+@media (min-width:720px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10rem;
+    }
+}
+
+@media (min-width:1200px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10rem;
+    }
+}
+
+.gallery-container {
+    @include container();
+    background-color: #ffe8cd;
+    margin-bottom: 30px;
+
+    &__title {
+        @include title();
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .gallery-section {
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+        max-height: 350px;
+        border: 5px inset rgb(243, 130, 153);
+        filter: brightness(50%);
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        &:hover {
+            transform: scale(1.14);
+            transition: all ease-in-out .5s;
+            filter: brightness(100%);
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+}
+
+@media (min-width:720px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+@media (min-width:1200px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+.contact-container{
+    @include container();
+
+    &__title{
+        @include title();
+    }
 }

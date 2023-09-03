@@ -23,7 +23,7 @@
                 <span class="bar"></span>
             </div>
             <ul class="nav no-search">
-                <li class="nav-item"><a href="#">Me Presento</a></li>
+                <li class="nav-item"><a href="#mePresento">Me Presento</a></li>
                 <li class="nav-item"><a href="#">Que Hacemos?</a></li>
                 <li class="nav-item"><a href="#">Servicios</a></li>
                 <li class="nav-item"><a href="#">Galeria</a></li>
@@ -35,7 +35,7 @@
         <section class="frontPage">
             <h1 class="frontPage__title">Organizamos tu evento!</h1>
         </section>
-        <section class="presentation-container">
+        <section id="mePreseto" class="presentation-container">
             <h2 class="presentation-container__title">ME PRESENTO!</h2>
             <span id="line1" class="line"></span>
             <img class="presentation-container__img" src="" alt="">
@@ -55,7 +55,7 @@
 
             <section class="way-container">
                 <h2 class="way-container__title">NUESTRA FORMA DE TRABAJAR</h2>
-                <span id="line2"  class="line"></span>
+                <span id="line2" class="line"></span>
                 <article id="interview" class="way-article">
                     <img class="way-article__img" src="./img/interview.png" alt="">
                     <h3 class="way-article__title">Entrevista</h3>
@@ -161,6 +161,51 @@
                 </div>
             </section>
         </section>
+        <section class="gallery-container">
+            <h2 class="gallery-container__title">GALERIA</h2>
+            <div class="gallery">
+                <article class="gallery-section"><img src="./img/2.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section"><img src="./img/3.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section"><img src="./img/4.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section"><img src="./img/5.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section"><img src="./img/6.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section"><img src="./img/7.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section"><img src="./img/8.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section"><img src="./img/9.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section"><img src="./img/10.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section"><img src="./img/11.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section"><img src="./img/12.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section"><img src="./img/13.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section"><img src="./img/14.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section"><img src="./img/15.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section"><img src="./img/16.jpg" alt="" class="gallery-section__img"></article>
+            </div>
+        </section>
+        <section class="contact-container">
+            <h2 class="contact-container__title">CONTACTO</h2>
+            <div class="contact-container__information">
+                <ul class="inforation-list">
+                    <li class="inforation-list__link">
+                        <img class="inforation-list__img" src="" alt="">Nos Encontramos En Parana, Entre
+                        Ríos
+                    </li>
+                    <li class="inforation-list__link">
+                        <img class="inforation-list__img" src="" alt="">343-5253742
+                    </li>
+                    <li class="inforation-list__link">
+                        <img class="inforation-list__img" src="" alt="">marianelab.eventplanner@gmail.com
+                    </li>
+                </ul>
+            </div>
+            <form action="" class="contact-container__form">
+                <input class="form-input__name" type="text" name="Name" id="Name" placeholder="Nombre Completo">
+                <input class="form-input__phone" type="tel" name="Tel" id="Tel" placeholder="Teléfono">
+                <input class="form-input__email" type="text" name="Email" id="Email" placeholder="correo@correo.com">
+                <textarea class="form-input__message" name="Consulta" id="Consulta" cols="30" rows="10"
+                    placeholder="Ingrese su Consulta"></textarea>
+                <input class="form-input__send" type="submit" value="ENVIAR">
+        </section>
+
     </main>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="./js/script.js"></script>
