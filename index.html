@@ -163,6 +163,7 @@
         </section>
         <section class="gallery-container">
             <h2 class="gallery-container__title">GALERIA</h2>
+            <span class="line"></span>
             <div class="gallery">
                 <article class="gallery-section"><img src="./img/2.jpg" alt="" class="gallery-section__img"></article>
                 <article class="gallery-section"><img src="./img/3.jpg" alt="" class="gallery-section__img"></article>
@@ -178,35 +179,47 @@
                 <article class="gallery-section"><img src="./img/13.jpg" alt="" class="gallery-section__img"></article>
                 <article class="gallery-section"><img src="./img/14.jpg" alt="" class="gallery-section__img"></article>
                 <article class="gallery-section"><img src="./img/15.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section"><img src="./img/16.jpg" alt="" class="gallery-section__img"></article>
+                <article id="last" class="gallery-section"><img src="./img/16.jpg" alt="" class="gallery-section__img"></article>
             </div>
         </section>
         <section class="contact-container">
             <h2 class="contact-container__title">CONTACTO</h2>
-            <div class="contact-container__information">
-                <ul class="inforation-list">
-                    <li class="inforation-list__link">
-                        <img class="inforation-list__img" src="" alt="">Nos Encontramos En Parana, Entre
-                        Ríos
-                    </li>
-                    <li class="inforation-list__link">
-                        <img class="inforation-list__img" src="" alt="">343-5253742
-                    </li>
-                    <li class="inforation-list__link">
-                        <img class="inforation-list__img" src="" alt="">marianelab.eventplanner@gmail.com
-                    </li>
-                </ul>
-            </div>
-            <form action="" class="contact-container__form">
+            <ul class="information-list">
+                <li class="information-list__link">
+                    <img class="information-list__img" src="./img/ubication.png" alt="">
+                    <h4 class="information-list__text">Parana, Entre
+                        Ríos</h4>
+                </li>
+                <li class="information-list__link">
+                    <img class="information-list__img" src="./img/celular.png" alt="">
+                    <h4 class="information-list__text">343-5253742</h4>
+                </li>
+                <li class="information-list__link">
+                    <img class="information-list__img" src="./img/correo.png" alt="">
+                    <h4 class="information-list__text">marianelab.eventplanner@gmail.com</h4>
+                </li>
+            </ul>
+            <form action="" class="form">
                 <input class="form-input__name" type="text" name="Name" id="Name" placeholder="Nombre Completo">
                 <input class="form-input__phone" type="tel" name="Tel" id="Tel" placeholder="Teléfono">
                 <input class="form-input__email" type="text" name="Email" id="Email" placeholder="correo@correo.com">
                 <textarea class="form-input__message" name="Consulta" id="Consulta" cols="30" rows="10"
                     placeholder="Ingrese su Consulta"></textarea>
-                <input class="form-input__send" type="submit" value="ENVIAR">
+                <input id="bottom" class="form-input__send" type="submit" value="ENVIAR">
+            </form>
         </section>
-
     </main>
+
+    <footer>
+        <section class="networks">
+            <h3 class="networks__title">NUESTRAS REDES</h3>
+            <span class="line"></span>
+            <div class="networks__links">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100088518060181&mibextid=ZbWKwL"><img src="./img/face.png" alt=""></a>
+                <a target="_blank" href="https://instagram.com/marianelab.eventplanner?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img src="./img/inst.png" alt=""></a>
+            </div>
+        </section>
+    </footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="./js/script.js"></script>
 </body>
