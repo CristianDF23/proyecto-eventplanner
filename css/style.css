@@ -30,7 +30,7 @@ html {
   align-items: center;
   background-color: white;
   box-shadow: 1px 2px 5px rgba(128, 128, 128, 0.671);
-  z-index: 3;
+  z-index: 5;
 }
 .navbar__brand {
   margin-left: 30px;
@@ -652,7 +652,17 @@ html {
   font-size: 2rem;
   color: crimson;
   color: white;
+  margin-top: -10px;
   z-index: 3;
+}
+.contact-container .whatsapp {
+  z-index: 5;
+  position: sticky;
+  top: 600px;
+  align-self: flex-end;
+}
+.contact-container .whatsapp__img {
+  width: 60px;
 }
 
 .information-list {

@@ -343,13 +343,24 @@
         left: 0;
         right: 0;
         bottom: 0;
-
     }
 
     &__title {
         @include title();
         color: white;
+        margin-top: -10px;
         z-index: 3;
+    }
+
+    .whatsapp {
+        z-index: 5;
+        position: sticky;
+        top: 600px;
+        align-self: flex-end;
+
+        &__img {
+            width: 60px;
+        }
     }
 }
 
@@ -438,6 +449,7 @@ $value in $inputs {
         }
     }
 }
+
 
 @media (min-width:1200px) {
     .contact-container {
