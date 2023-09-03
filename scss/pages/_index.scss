@@ -181,8 +181,6 @@
 
 @media (min-width:1200px) {
     .way-container {
-        margin-left: 10px;
-        margin-right: 10px;
         display: grid;
         gap: 1rem;
         column-gap: 2rem;
@@ -355,7 +353,7 @@
     .whatsapp {
         z-index: 5;
         position: sticky;
-        top: 600px;
+        top: 500px;
         align-self: flex-end;
 
         &__img {
@@ -487,6 +485,10 @@ $value in $inputs {
                 width: 200px;
             }
         }
+
+        .whatsapp {
+            grid-column: 5;
+        }
     }
 }
 
@@ -524,6 +526,22 @@ $value in $inputs {
             &:hover {
                 filter: invert(80%);
             }
+        }
+    }
+}
+
+.top {
+    z-index: 4;
+    position: sticky;
+    top: 565px;
+    float: right;
+
+    &__img {
+        width: 50px;
+        filter: opacity(.3);
+
+        &:hover{
+            filter: opacity(1);
         }
     }
 }

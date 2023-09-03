@@ -489,8 +489,6 @@ html {
 }
 @media (min-width: 1200px) {
   .way-container {
-    margin-left: 10px;
-    margin-right: 10px;
     display: grid;
     gap: 1rem;
     column-gap: 2rem;
@@ -658,7 +656,7 @@ html {
 .contact-container .whatsapp {
   z-index: 5;
   position: sticky;
-  top: 600px;
+  top: 500px;
   align-self: flex-end;
 }
 .contact-container .whatsapp__img {
@@ -805,6 +803,9 @@ html {
   .contact-container .form #bottom {
     width: 200px;
   }
+  .contact-container .whatsapp {
+    grid-column: 5;
+  }
 }
 .networks {
   margin-top: 10px;
@@ -836,6 +837,20 @@ html {
 }
 .networks__links img:hover {
   filter: invert(80%);
+}
+
+.top {
+  z-index: 4;
+  position: sticky;
+  top: 565px;
+  float: right;
+}
+.top__img {
+  width: 50px;
+  filter: opacity(0.3);
+}
+.top__img:hover {
+  filter: opacity(1);
 }
 
 /*# sourceMappingURL=style.css.map */
