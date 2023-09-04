@@ -362,7 +362,6 @@ html {
   max-width: 500px;
   font-size: 1.1rem;
   font-weight: 500;
-  letter-spacing: 0.5px;
   margin-bottom: 20px;
 }
 
@@ -414,7 +413,7 @@ html {
   max-width: 500px;
   font-size: 1.1rem;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  margin-bottom: 30px;
 }
 
 .way-container {
@@ -454,7 +453,7 @@ html {
   max-width: 500px;
   font-size: 1.1rem;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  max-width: 263px;
 }
 
 /*-VIEW TABLET AND DESKTOP*/
@@ -490,8 +489,7 @@ html {
 @media (min-width: 1200px) {
   .way-container {
     display: grid;
-    gap: 1rem;
-    column-gap: 2rem;
+    column-gap: 3rem;
     justify-items: center;
     align-items: start;
     grid-template-areas: "tit tit tit tit" "lin lin lin lin" "int id des eve" "int id des eve";

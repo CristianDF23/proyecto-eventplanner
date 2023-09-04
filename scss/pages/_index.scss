@@ -8,8 +8,7 @@
 @mixin text {
     max-width: 500px;
     font-size: 1.1rem;
-    font-weight: 500;
-    letter-spacing: .5px;
+    font-weight: 500;   
 }
 
 @mixin container {
@@ -97,10 +96,12 @@
 
     &__title {
         @include title();
+        
     }
 
     &__text {
         @include text();
+        margin-bottom: 30px;
     }
 }
 
@@ -131,6 +132,7 @@
 
     &__text {
         @include text();
+        max-width: 263px;
     }
 }
 
@@ -182,8 +184,7 @@
 @media (min-width:1200px) {
     .way-container {
         display: grid;
-        gap: 1rem;
-        column-gap: 2rem;
+        column-gap: 3rem;
         justify-items: center;
         align-items: start;
         grid-template-areas:
