@@ -17,7 +17,7 @@
     <a class="top" href="#top"><img class="top__img" src="./img/up.png" alt=""></a>
     <header id="top">
         <nav class="navbar">
-            <img class="navbar__brand" src="./img/logo.jpeg" alt="Company Logo">
+            <a href="./index.html"><img class="navbar__brand" src="./img/logo.jpeg" alt="Company Logo"></a>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -39,7 +39,7 @@
         <section id="1" class="presentation-container">
             <h2 class="presentation-container__title">ME PRESENTO!</h2>
             <span id="line1" class="line"></span>
-            <img class="presentation-container__img" src="" alt="">
+            <img class="presentation-container__img" src="./img/presentacion.jpg" alt="">
             <p class="presentation-container__text">Bienvenidos! Soy Marian, apasionada de la organización de eventos,
                 creadora de
                 Marianelab.eventplanner, el espacio para planificar un evento único e irrepetible.
@@ -201,13 +201,15 @@
                     <h4 class="information-list__text">marianelab.eventplanner@gmail.com</h4>
                 </li>
             </ul>
-            <form action="" class="form">
-                <input class="form-input__name" type="text" name="Name" id="Name" placeholder="Nombre Completo">
-                <input class="form-input__phone" type="tel" name="Tel" id="Tel" placeholder="Teléfono">
-                <input class="form-input__email" type="text" name="Email" id="Email" placeholder="correo@correo.com">
-                <textarea class="form-input__message" name="Consulta" id="Consulta" cols="30" rows="10"
+            <form action="https://formsubmit.co/marianelab.eventplanner@gmail.com" method="POST" class="form">
+                <input class="form-input__name" type="text" name="Nombre" id="Nombre" placeholder="Nombre Completo">
+                <input class="form-input__phone" type="tel" name="Celular" id="Telelefono" placeholder="Teléfono">
+                <input class="form-input__email" type="email" name="Correo" id="Correo" placeholder="correo@correo.com">
+                <textarea class="form-input__message" name="Mensaje" id="Consulta" cols="30" rows="10"
                     placeholder="Ingrese su Consulta"></textarea>
                 <input id="bottom" class="form-input__send" type="submit" value="ENVIAR">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </section>
     </main>
