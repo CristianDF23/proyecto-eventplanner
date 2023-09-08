@@ -23,19 +23,22 @@ html {
 /* NAVIGATION BAR*/
 .navbar {
   width: 100%;
-  height: 70px;
+  height: 72px;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  box-shadow: 1px 2px 5px rgba(128, 128, 128, 0.671);
   z-index: 5;
+  background-color: transparent;
 }
 .navbar__brand {
+  margin-top: 8px;
   margin-left: 30px;
   height: 100%;
   width: 80px;
+  border-radius: 100%;
+  border: 2px solid black;
+  border-image: space;
 }
 
 .nav {
@@ -45,15 +48,16 @@ html {
   margin-right: 30px;
   gap: 2rem;
 }
-.nav-item a {
-  color: black;
+.nav .link {
+  color: white;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 400;
 }
-.nav-item a:hover {
-  border-bottom: 3px solid crimson;
-  color: crimson;
-  font-weight: bold;
+.nav .link:hover {
+  padding: 3px;
+  border-left: 3px solid crimson;
+  font-weight: bolder;
+  color: crimson !important;
 }
 
 .no-search {
@@ -101,6 +105,7 @@ html {
 @media only screen and (max-width: 720px) {
   /* MOBILE NAVIGATION */
   .navbar {
+    background-color: transparent;
     z-index: 4;
     justify-content: space-between;
   }
@@ -119,14 +124,13 @@ html {
     background-color: white;
     transform: translate(-101%);
     overflow: hidden;
-    box-shadow: 1px 2px 5px rgba(128, 128, 128, 0.671);
   }
   .navbar li {
     padding: 15px;
   }
   .navbar li a {
     font-size: 1.2rem;
-    color: black;
+    color: black !important;
   }
   .menu-toggle,
   .bar {
@@ -333,11 +337,6 @@ html {
   font-weight: 600;
 }
 
-@media (min-width: 720px) {
-  p {
-    text-align: justify;
-  }
-}
 .line {
   height: 3px;
   width: 50px;
@@ -361,7 +360,7 @@ html {
 }
 .presentation-container__text {
   max-width: 500px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -416,7 +415,7 @@ html {
 }
 .work-container__text {
   max-width: 500px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 500;
   margin-bottom: 30px;
 }
@@ -456,7 +455,7 @@ html {
 }
 .way-article__text {
   max-width: 500px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 500;
   max-width: 263px;
 }
