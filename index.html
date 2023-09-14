@@ -9,15 +9,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/1da6003bc6/UntitledProject/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Event Planner</title>
 </head>
 
-<body>
-    <span class="ir-arriba icon-arrow-up2"></span>
-    <header id="top">
+<body class="general-container">
+    <header>
         <nav id="navBar" class="navbar">
             <a href="./index.html"><img id="logo" class="navbar__brand" src="./img/logo.png" alt="Company Logo"></a>
             <div class="menu-toggle" id="mobile-menu">
@@ -36,13 +35,15 @@
     </header>
     <main>
         <section class="frontPage">
-            <h1 class="frontPage__title" data-aos="fade-right">Organizamos tu evento!</h1>
+            <h1 class="frontPage__title" data-aos="fade-right" data-aos-duration="3000">Organizamos tu evento!</h1>
         </section>
         <section id="1" class="presentation-container">
-            <h2 class="presentation-container__title">ME PRESENTO!</h2>
-            <span id="line1" class="line"></span>
-            <img class="presentation-container__img" data-aos="fade-up-right" src="./img/presentacion.jpg" alt="">
-            <p class="presentation-container__text" data-aos="fade-up-left">Bienvenidos! Soy Marian, apasionada de la
+            <h2 class="presentation-container__title" data-aos="fade-down" data-aos-duration="3000">ME PRESENTO!</h2>
+            <span id="line1" class="line" data-aos="fade-down" data-aos-duration="3000"></span>
+            <img class="presentation-container__img" data-aos="fade-up-right" data-aos-duration="3000"
+                src="./img/presentacion.jpg" alt="">
+            <p class="presentation-container__text" data-aos="fade-up-left" data-aos-duration="3000">Bienvenidos! Soy
+                Marian, apasionada de la
                 organización de eventos,
                 creadora de
                 Marianelab.eventplanner, el espacio para planificar un evento único e irrepetible.
@@ -51,16 +52,19 @@
                 detalles y asegurarme de que ese día no tengas que preocuparte por nada mas que disfrutar!</p>
         </section>
         <section id="2" class="work-container">
-            <h2 class="work-container__title">¿QUE HACEMOS?</h2>
-            <span class="line"></span>
-            <p class="work-container__text">Marianelab. Pone a tu alcance un equipo de profesionales con el único
+            <h2 class="work-container__title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                ¿QUE HACEMOS?</h2>
+            <span class="line" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"></span>
+            <p class="work-container__text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                Marianelab. Pone a tu alcance un equipo de profesionales con el único
                 objetivo de
                 diseñar un evento inolvidable.</p>
 
             <section class="way-container">
-                <h2 class="way-container__title">NUESTRA FORMA DE TRABAJAR</h2>
-                <span id="line2" class="line"></span>
-                <article id="interview" class="way-article" data-aos="fade-up">
+                <h2 class="way-container__title" data-aos="fade-up" data-aos-duration="3000">NUESTRA FORMA DE TRABAJAR
+                </h2>
+                <span id="line2" class="line" data-aos="fade-up" data-aos-duration="3000"></span>
+                <article id="interview" class="way-article" data-aos="fade-up" data-aos-duration="3000">
                     <img class="way-article__img" src="./img/interview.png" alt="">
                     <h3 class="way-article__title">Entrevista</h3>
                     <p class="way-article__text">Concretamos una entrevista donde podremos conocernos y conocer que es
@@ -68,14 +72,14 @@
                         podemos
                         ayudarte</p>
                 </article>
-                <article id="idea" class="way-article" data-aos="fade-up">
+                <article id="idea" class="way-article" data-aos="fade-up" data-aos-duration="3000">
                     <img class="way-article__img" src="./img/idea.png" alt="">
                     <h3 class="way-article__title">Propuesta</h3>
                     <p class="way-article__text">En base a esto el equipo de Marianelab. Realiza una propuesta
                         personalizada de acuerdo a tus
                         necesidades.</p>
                 </article>
-                <article id="desing" class="way-article" data-aos="fade-up">
+                <article id="desing" class="way-article" data-aos="fade-up" data-aos-duration="3000">
                     <img class="way-article__img" src="./img/desing.png" alt="">
                     <h3 class="way-article__title">Creación</h3>
                     <p class="way-article__text">Una vez aprobada la propuesta, comenzamos la planificación de un evento
@@ -83,7 +87,7 @@
                         un
                         calendario específico para tu evento.</p>
                 </article>
-                <article id="event" class="way-article" data-aos="fade-up">
+                <article id="event" class="way-article" data-aos="fade-up" data-aos-duration="3000">
                     <img class="way-article__img" src="./img/event.png" alt="">
                     <h3 class="way-article__title">Implementación</h3>
                     <p class="way-article__text">El día de la puesta en escena! Estaremos trabajando junto a todo el
@@ -93,10 +97,11 @@
             </section>
         </section>
         <section id="3" class="services-container">
-            <h2 class="services-container__title">SERVICIOS</h2>
-            <span class="line"></span>
-            <section class="card-container">
-                <div class="card" data-aos="zoom-in">
+            <h2 class="services-container__title" data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">SERVICIOS</h2>
+            <span class="line" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"></span>
+            <section class="card-container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div class="content">
                         <div class="front-one">
                             <h4 class="front-one__title">BODAS</h4>
@@ -108,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" data-aos="zoom-in">
+                <div class="card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div class="content">
                         <div class="front-two">
                             <h4 class="front-two__title">XV AÑOS</h4>
@@ -119,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" data-aos="zoom-in">
+                <div class="card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div class="content">
                         <div class="front-three">
                             <h4 class="front-three__title">CUMPLEAÑOS</h4>
@@ -130,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" data-aos="zoom-in">
+                <div class="card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div class="content">
                         <div class="front-four">
                             <h4 class="front-four__title">ANIVERSARIOS</h4>
@@ -141,7 +146,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" data-aos="zoom-in">
+                <div class="card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div class="content">
                         <div class="front-five">
                             <h4 class="front-five__title">RECEPCIONES</h4>
@@ -152,7 +157,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" data-aos="zoom-in">
+                <div class="card" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div class="content">
                         <div class="front-six">
                             <h4 class="front-six__title">EVENTOS CORPORATIVOS</h4>
@@ -166,32 +171,47 @@
             </section>
         </section>
         <section id="4" class="gallery-container">
-            <h2 class="gallery-container__title">GALERIA</h2>
-            <span class="line"></span>
-            <div class="gallery" >
-                <article class="gallery-section" data-aos="fade-up"><img src="./img/2.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section" data-aos="fade-up"><img src="./img/3.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section" data-aos="fade-up"><img src="./img/4.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section" data-aos="fade-up"><img src="./img/5.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section" data-aos="fade-up"><img src="./img/6.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section" data-aos="fade-up"><img src="./img/7.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section" data-aos="fade-up"><img src="./img/8.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section" data-aos="fade-up"><img src="./img/9.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section" data-aos="fade-up"><img src="./img/10.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section" data-aos="fade-up"><img src="./img/11.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section" data-aos="fade-up"><img src="./img/12.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section" data-aos="fade-up"><img src="./img/13.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section" data-aos="fade-up"><img src="./img/14.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section" data-aos="fade-up"><img src="./img/15.jpg" alt="" class="gallery-section__img"></article>
-                <article id="last" class="gallery-section" data-aos="fade-up"><img src="./img/16.jpg" alt="" class="gallery-section__img">
+            <h2 class="gallery-container__title" data-aos="fade-down" data-aos-duration="3000">GALERIA</h2>
+            <span class="line" data-aos="fade-down" data-aos-duration="3000"></span>
+            <div class="gallery">
+                <article class="gallery-section" data-aos="fade-up" data-aos-duration="3000"><img src="./img/2.jpg"
+                        alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up" data-aos-duration="3000"><img src="./img/3.jpg"
+                        alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up" data-aos-duration="3000"><img src="./img/4.jpg"
+                        alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up" data-aos-duration="3000"><img src="./img/5.jpg"
+                        alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up" data-aos-duration="3000"><img src="./img/6.jpg"
+                        alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up" data-aos-duration="3000"><img src="./img/7.jpg"
+                        alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up" data-aos-duration="3000"><img src="./img/8.jpg"
+                        alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up" data-aos-duration="3000"><img src="./img/9.jpg"
+                        alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up" data-aos-duration="3000"><img src="./img/10.jpg"
+                        alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up" data-aos-duration="3000"><img src="./img/11.jpg"
+                        alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up" data-aos-duration="3000"><img src="./img/12.jpg"
+                        alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up" data-aos-duration="3000"><img src="./img/13.jpg"
+                        alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up" data-aos-duration="3000"><img src="./img/14.jpg"
+                        alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up" data-aos-duration="3000"><img src="./img/15.jpg"
+                        alt="" class="gallery-section__img"></article>
+                <article id="last" class="gallery-section" data-aos="fade-up" data-aos-duration="3000"><img
+                        src="./img/16.jpg" alt="" class="gallery-section__img">
                 </article>
             </div>
         </section>
         <section id="5" class="contact-container">
             <a class="whatsapp" target="_blank" href="https://wa.me/message/4EVJ67T3JZ7HA1"><img class="whatsapp__img"
                     src="./img/what.png" alt=""></a>
-            <h2 class="contact-container__title">CONTACTO</h2>
-            <ul class="information-list" data-aos="fade-right">
+            <h2 class="contact-container__title" data-aos="fade-down" data-aos-duration="3000">CONTACTO</h2>
+            <ul class="information-list" data-aos="fade-right" data-aos-duration="3000">
                 <li class="information-list__link">
                     <img class="information-list__img" src="./img/ubication.png" alt="">
                     <h4 class="information-list__text">Parana, Entre
@@ -206,7 +226,8 @@
                     <h4 class="information-list__text">marianelab.eventplanner@gmail.com</h4>
                 </li>
             </ul>
-            <form data-aos="fade-left" action="https://formsubmit.co/marianelab.eventplanner@gmail.com" method="POST" class="form">
+            <form data-aos="fade-left" data-aos-duration="3000"
+                action="https://formsubmit.co/marianelab.eventplanner@gmail.com" method="POST" class="form">
                 <input class="form-input__name" type="text" name="Nombre" id="Nombre" placeholder="Nombre Completo">
                 <input class="form-input__phone" type="tel" name="Celular" id="Telelefono" placeholder="Teléfono">
                 <input class="form-input__email" type="email" name="Correo" id="Correo" placeholder="correo@correo.com">
