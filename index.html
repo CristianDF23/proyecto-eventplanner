@@ -10,13 +10,16 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/1da6003bc6/UntitledProject/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Event Planner</title>
 </head>
 
 <body>
+    <span class="ir-arriba icon-arrow-up2"></span>
     <header id="top">
         <nav id="navBar" class="navbar">
-                <a href="./index.html"><img id="logo" class="navbar__brand" src="./img/logo.png" alt="Company Logo"></a>
+            <a href="./index.html"><img id="logo" class="navbar__brand" src="./img/logo.png" alt="Company Logo"></a>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -33,14 +36,14 @@
     </header>
     <main>
         <section class="frontPage">
-            <!-- <a class="top" href="#top"><img class="top__img" src="./img/up.png" alt=""></a> -->
-            <h1 class="frontPage__title">Organizamos tu evento!</h1>
+            <h1 class="frontPage__title" data-aos="fade-right">Organizamos tu evento!</h1>
         </section>
         <section id="1" class="presentation-container">
             <h2 class="presentation-container__title">ME PRESENTO!</h2>
             <span id="line1" class="line"></span>
-            <img class="presentation-container__img" src="./img/presentacion.jpg" alt="">
-            <p class="presentation-container__text">Bienvenidos! Soy Marian, apasionada de la organización de eventos,
+            <img class="presentation-container__img" data-aos="fade-up-right" src="./img/presentacion.jpg" alt="">
+            <p class="presentation-container__text" data-aos="fade-up-left">Bienvenidos! Soy Marian, apasionada de la
+                organización de eventos,
                 creadora de
                 Marianelab.eventplanner, el espacio para planificar un evento único e irrepetible.
                 Mi compromiso es brindarles un servicio excepcional en cada etapa del evento.
@@ -57,7 +60,7 @@
             <section class="way-container">
                 <h2 class="way-container__title">NUESTRA FORMA DE TRABAJAR</h2>
                 <span id="line2" class="line"></span>
-                <article id="interview" class="way-article">
+                <article id="interview" class="way-article" data-aos="fade-up">
                     <img class="way-article__img" src="./img/interview.png" alt="">
                     <h3 class="way-article__title">Entrevista</h3>
                     <p class="way-article__text">Concretamos una entrevista donde podremos conocernos y conocer que es
@@ -65,14 +68,14 @@
                         podemos
                         ayudarte</p>
                 </article>
-                <article id="idea" class="way-article">
+                <article id="idea" class="way-article" data-aos="fade-up">
                     <img class="way-article__img" src="./img/idea.png" alt="">
                     <h3 class="way-article__title">Propuesta</h3>
                     <p class="way-article__text">En base a esto el equipo de Marianelab. Realiza una propuesta
                         personalizada de acuerdo a tus
                         necesidades.</p>
                 </article>
-                <article id="desing" class="way-article">
+                <article id="desing" class="way-article" data-aos="fade-up">
                     <img class="way-article__img" src="./img/desing.png" alt="">
                     <h3 class="way-article__title">Creación</h3>
                     <p class="way-article__text">Una vez aprobada la propuesta, comenzamos la planificación de un evento
@@ -80,7 +83,7 @@
                         un
                         calendario específico para tu evento.</p>
                 </article>
-                <article id="event" class="way-article">
+                <article id="event" class="way-article" data-aos="fade-up">
                     <img class="way-article__img" src="./img/event.png" alt="">
                     <h3 class="way-article__title">Implementación</h3>
                     <p class="way-article__text">El día de la puesta en escena! Estaremos trabajando junto a todo el
@@ -93,7 +96,7 @@
             <h2 class="services-container__title">SERVICIOS</h2>
             <span class="line"></span>
             <section class="card-container">
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <div class="content">
                         <div class="front-one">
                             <h4 class="front-one__title">BODAS</h4>
@@ -105,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <div class="content">
                         <div class="front-two">
                             <h4 class="front-two__title">XV AÑOS</h4>
@@ -116,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <div class="content">
                         <div class="front-three">
                             <h4 class="front-three__title">CUMPLEAÑOS</h4>
@@ -127,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <div class="content">
                         <div class="front-four">
                             <h4 class="front-four__title">ANIVERSARIOS</h4>
@@ -138,7 +141,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <div class="content">
                         <div class="front-five">
                             <h4 class="front-five__title">RECEPCIONES</h4>
@@ -149,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <div class="content">
                         <div class="front-six">
                             <h4 class="front-six__title">EVENTOS CORPORATIVOS</h4>
@@ -165,28 +168,30 @@
         <section id="4" class="gallery-container">
             <h2 class="gallery-container__title">GALERIA</h2>
             <span class="line"></span>
-            <div class="gallery">
-                <article class="gallery-section"><img src="./img/2.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section"><img src="./img/3.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section"><img src="./img/4.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section"><img src="./img/5.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section"><img src="./img/6.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section"><img src="./img/7.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section"><img src="./img/8.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section"><img src="./img/9.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section"><img src="./img/10.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section"><img src="./img/11.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section"><img src="./img/12.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section"><img src="./img/13.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section"><img src="./img/14.jpg" alt="" class="gallery-section__img"></article>
-                <article class="gallery-section"><img src="./img/15.jpg" alt="" class="gallery-section__img"></article>
-                <article id="last" class="gallery-section"><img src="./img/16.jpg" alt="" class="gallery-section__img"></article>
+            <div class="gallery" >
+                <article class="gallery-section" data-aos="fade-up"><img src="./img/2.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up"><img src="./img/3.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up"><img src="./img/4.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up"><img src="./img/5.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up"><img src="./img/6.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up"><img src="./img/7.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up"><img src="./img/8.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up"><img src="./img/9.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up"><img src="./img/10.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up"><img src="./img/11.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up"><img src="./img/12.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up"><img src="./img/13.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up"><img src="./img/14.jpg" alt="" class="gallery-section__img"></article>
+                <article class="gallery-section" data-aos="fade-up"><img src="./img/15.jpg" alt="" class="gallery-section__img"></article>
+                <article id="last" class="gallery-section" data-aos="fade-up"><img src="./img/16.jpg" alt="" class="gallery-section__img">
+                </article>
             </div>
-        </section>  
+        </section>
         <section id="5" class="contact-container">
-            <a class="whatsapp" target="_blank" href="https://wa.me/message/4EVJ67T3JZ7HA1"><img class="whatsapp__img" src="./img/what.png" alt=""></a>
+            <a class="whatsapp" target="_blank" href="https://wa.me/message/4EVJ67T3JZ7HA1"><img class="whatsapp__img"
+                    src="./img/what.png" alt=""></a>
             <h2 class="contact-container__title">CONTACTO</h2>
-            <ul class="information-list">
+            <ul class="information-list" data-aos="fade-right">
                 <li class="information-list__link">
                     <img class="information-list__img" src="./img/ubication.png" alt="">
                     <h4 class="information-list__text">Parana, Entre
@@ -201,7 +206,7 @@
                     <h4 class="information-list__text">marianelab.eventplanner@gmail.com</h4>
                 </li>
             </ul>
-            <form action="https://formsubmit.co/marianelab.eventplanner@gmail.com" method="POST" class="form">
+            <form data-aos="fade-left" action="https://formsubmit.co/marianelab.eventplanner@gmail.com" method="POST" class="form">
                 <input class="form-input__name" type="text" name="Nombre" id="Nombre" placeholder="Nombre Completo">
                 <input class="form-input__phone" type="tel" name="Celular" id="Telelefono" placeholder="Teléfono">
                 <input class="form-input__email" type="email" name="Correo" id="Correo" placeholder="correo@correo.com">
@@ -219,11 +224,15 @@
             <h3 class="networks__title">NUESTRAS REDES</h3>
             <span class="line"></span>
             <div class="networks__links">
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=100088518060181&mibextid=ZbWKwL"><img src="./img/face.png" alt=""></a>
-                <a target="_blank" href="https://instagram.com/marianelab.eventplanner?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img src="./img/inst.png" alt=""></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100088518060181&mibextid=ZbWKwL"><img
+                        src="./img/face.png" alt=""></a>
+                <a target="_blank"
+                    href="https://instagram.com/marianelab.eventplanner?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img
+                        src="./img/inst.png" alt=""></a>
             </div>
         </section>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="./js/script.js"></script>
 </body>

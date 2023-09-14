@@ -382,13 +382,14 @@ html {
     grid-area: title;
   }
   .presentation-container__img {
+    grid-area: img;
     display: block;
     margin-right: 70px;
-    grid-area: img;
+    background-color: rgba(220, 20, 60, 0.651);
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
     width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 20px 3px rgb(226, 75, 105);
   }
   .presentation-container__text {
     grid-area: text;
@@ -834,18 +835,17 @@ html {
   filter: invert(80%);
 }
 
-.top {
-  z-index: 4;
-  position: sticky;
-  top: 565px;
-  float: right;
-}
-.top__img {
-  width: 50px;
-  filter: opacity(0.3);
-}
-.top__img:hover {
-  filter: opacity(1);
+.ir-arriba {
+  z-index: 10;
+  display: none;
+  padding: 10px;
+  background: crimson;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
