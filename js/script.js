@@ -1,38 +1,34 @@
 AOS.init();
 
-$("#search-icon").click(function () {
-  $(".nav").toggleClass("search");
-  $(".nav").toggleClass("no-search");
-  $(".search-input").toggleClass("search-active");
-});
-
-$('.menu-toggle').click(function () {
-  $(".nav").toggleClass("mobile-nav");
-  $(this).toggleClass("is-active");
-});
-
 let navBar = document.getElementById('navBar');
-let text = document.getElementsByClassName('link');
+let link = document.getElementsByClassName('link');
+let btnMenu = document.getElementById('btncheck');
+let logo = document.getElementById('logo')
 
 window.onscroll = () => {
-  if (screen.width > 721) {
-    if (document.documentElement.scrollTop > 50) {
-      for (let i = 0; i < text.length; i++) {
-        text[i].style.color = 'black';
-      }
-      navBar.style.background = 'white';
-    } else {
-      for (let i = 0; i < text.length; i++) {
-        text[i].style.color = 'white';
-      }
-      navBar.style.background = 'transparent';
+    if (window.innerWidth  > 850) {
+        if (document.documentElement.scrollTop > 50) {
+            navBar.style.background = 'white';
+            for (const elem of link) {
+                elem.style.color = 'black';
+            }
+            logo.style.filter = 'none'
+        } else {
+            navBar.style.background = 'transparent'
+            for (const elem of link) {
+                elem.style.color = 'white';
+            }
+            logo.style.filter = 'invert(100%)'
+        }
+    }else{
+        if (document.documentElement.scrollTop > 50){
+            navBar.style.background = 'white';
+            btnMenu.style.color = 'black';
+            logo.style.filter = 'none'
+        }else{
+            navBar.style.background = 'transparent'
+            btnMenu.style.color = 'white';
+            logo.style.filter = 'invert(100%)'
+        }
     }
-  } else if (screen.width < 721) {
-    if (document.documentElement.scrollTop > 50) {
-      navBar.style.background = 'white';
-    } else {
-      navBar.style.background = 'transparent';
-    }
-  }
 }
-

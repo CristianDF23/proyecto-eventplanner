@@ -17,7 +17,6 @@ li {
 
 html {
   scroll-behavior: smooth;
-  font-family: "Montserrat", sans-serif;
 }
 
 /*--General Container--*/
@@ -28,125 +27,97 @@ html {
     margin-right: auto;
   }
 }
-/* NAVIGATION BAR*/
-.navbar {
-  height: 72px;
+nav {
   position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 5;
-  background-color: transparent;
-}
-.navbar__brand {
-  margin-top: 8px;
-  margin-left: 30px;
-  height: 100%;
-  width: 80px;
-  border-radius: 100%;
-  border: 2px solid black;
-  border-image: space;
+  z-index: 10;
+  background: transparent;
+  height: 80px;
+  width: 100%;
 }
 
-.nav {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  margin-right: 30px;
-  gap: 2rem;
+.logo img {
+  width: 100px;
+  filter: invert(100%);
 }
-.nav .link {
+.logo:hover {
+  border-bottom: none;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
   color: white;
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-.nav .link:hover {
-  padding: 3px;
-  border-left: 3px solid crimson;
-  font-weight: bolder;
-  color: crimson !important;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: uppercase;
 }
 
-.no-search {
-  transform: translate(0);
-  transition: transform 0.7s ease-in-out;
+a:hover {
+  border-bottom: 2px solid crimson;
 }
 
-/* MOBILE MENU & ANIMATION */
-.menu-toggle {
-  justify-self: end;
-  margin-right: 25px;
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
   display: none;
 }
-.menu-toggle:hover {
-  cursor: pointer;
-}
-.menu-toggle .bar {
-  width: 25px;
-  height: 3px;
-  background-color: crimson;
-  margin: 5px auto;
-  transition: all 0.3s ease-in-out;
+
+#check {
+  display: none;
 }
 
-#mobile-menu.is-active .bar:nth-child(2) {
-  opacity: 0;
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
 }
-
-#mobile-menu.is-active .bar:nth-child(1) {
-  -webkit-transform: translateY(8px) rotate(45deg);
-  -ms-transform: translateY(8px) rotate(45deg);
-  -o-transform: translateY(8px) rotate(45deg);
-  transform: translateY(8px) rotate(45deg);
-}
-
-#mobile-menu.is-active .bar:nth-child(3) {
-  -webkit-transform: translateY(-8px) rotate(-45deg);
-  -ms-transform: translateY(-8px) rotate(-45deg);
-  -o-transform: translateY(-8px) rotate(-45deg);
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-/* Media Queries */
-/* Mobile Devices - Phones/Tablets */
-@media only screen and (max-width: 720px) {
-  /* MOBILE NAVIGATION */
-  .navbar {
-    background-color: transparent;
-    z-index: 4;
-    justify-content: space-between;
-  }
-  .navbar ul {
-    width: 100%;
-    height: 310px;
-    top: 70px;
-    padding-top: 20px;
-    padding-left: 20px;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 0.3rem;
-    background-color: white;
-    transform: translate(-101%);
-    overflow: hidden;
-  }
-  .navbar li {
-    padding: 15px;
-  }
-  .navbar li a {
-    font-size: 1.2rem;
-    color: black !important;
-  }
-  .menu-toggle,
-  .bar {
+@media (max-width: 858px) {
+  .checkbtn {
     display: block;
-    cursor: pointer;
-    order: 1;
   }
-  .mobile-nav {
-    transform: translate(0%) !important;
+  ul {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    top: 80px;
+    left: -100%;
+    padding-left: 100px;
+    text-align: start;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    color: black;
+    font-size: 20px;
+  }
+  a.active {
+    border-bottom: 2px solid crimson;
+  }
+  #check:checked ~ ul {
+    left: 0;
   }
 }
 /*FRONTPAGE*/
@@ -163,7 +134,7 @@ html {
   background-position: center center;
 }
 .frontPage::before {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.65);
   position: absolute;
   content: "";
   top: 0;
@@ -190,6 +161,7 @@ html {
   width: 200px;
   height: 270px;
   perspective: 500px;
+  border: none;
 }
 
 .content {
