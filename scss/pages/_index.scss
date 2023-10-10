@@ -234,14 +234,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    padding: 20px;
 }
 
 @media (min-width:720px) {
     .card-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 10rem;
+        row-gap: 1.5rem
     }
 }
 
@@ -249,7 +249,7 @@
     .card-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 10rem;
+        row-gap: 1.5rem
     }
 }
 
@@ -383,7 +383,6 @@
         font-size: 1rem;
     }
 }
-
 
 
 @mixin input-area {

@@ -157,163 +157,57 @@ a:hover {
     font-size: 3.5rem;
   }
 }
-.card {
-  width: 200px;
-  height: 270px;
-  perspective: 500px;
-  border: none;
-}
-
-.content {
-  position: absolute;
+.container {
+  position: relative;
   width: 100%;
-  height: 100%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  transition: transform 1s;
-  transform-style: preserve-3d;
 }
 
-.card:hover .content {
-  transform: rotateY(180deg);
-  transition: transform 1s;
+.image {
+  display: block;
+  width: 360px;
+  height: 240px;
+  object-fit: auto;
 }
 
-.front-one {
+.overlay {
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 12px;
+  right: 0;
   height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 5px;
-  backface-visibility: hidden;
-  background-image: url("https://w0.peakpx.com/wallpaper/976/492/HD-wallpaper-wedding-day-mcouple-bouquet-rose-love-flower-marriage-white-wedding.jpg");
-}
-.front-one__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40%;
-  color: crimson;
-  text-align: center;
-  font-size: 1.5rem;
+  max-width: 360px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(219, 59, 91);
+  padding: 30px;
 }
 
-.front-two {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 5px;
-  backface-visibility: hidden;
-  background-image: url("https://i.pinimg.com/474x/d2/21/e2/d221e2dcb620f62036c958c36eeb72db.jpg");
-}
-.front-two__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40%;
-  color: crimson;
-  text-align: center;
-  font-size: 1.5rem;
+.container:hover .overlay {
+  opacity: 0.9;
 }
 
-.front-three {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 5px;
-  backface-visibility: hidden;
-  background-image: url("https://i.pinimg.com/1200x/f3/74/29/f37429fc43282d521cdef72326da16b1.jpg");
-}
-.front-three__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40%;
-  color: crimson;
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.front-four {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 5px;
-  backface-visibility: hidden;
-  background-image: url("https://1.bp.blogspot.com/-qmNMoGSWuic/X4kDiWRPTEI/AAAAAAABRZA/rdjm39GlSZEH0oFb1zvAYW7yMeR2dWoCwCLcBGAsYHQ/s0/9d571ccbf52f876998b4f5da6c6e26ff.jpg");
-}
-.front-four__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40%;
-  color: crimson;
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.front-five {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 5px;
-  backface-visibility: hidden;
-  background-image: url("https://i.pinimg.com/originals/ba/48/38/ba48383d7ef0bef2f78e10fea582024c.jpg");
-}
-.front-five__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40%;
-  color: crimson;
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.front-six {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 5px;
-  backface-visibility: hidden;
-  background-image: url("https://e1.pxfuel.com/desktop-wallpaper/801/855/desktop-wallpaper-private-event-management-corporate-event.jpg");
-}
-.front-six__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40%;
-  color: crimson;
-  text-align: center;
-  font-size: 1.5rem;
-  font-size: 1.4rem;
-}
-
-.back {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 5px;
-  backface-visibility: hidden;
-  background: rgb(211, 82, 108);
+.text {
   color: white;
-  transform: rotateY(180deg);
-}
-.back__text {
-  margin-top: 40px;
+  font-weight: 700;
+  font-size: 30px;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 1.2rem;
+}
+
+.description {
   font-weight: 600;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 60px;
+  left: 0;
 }
 
 .line {
@@ -517,21 +411,21 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  padding: 20px;
 }
 
 @media (min-width: 720px) {
   .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 10rem;
+    row-gap: 1.5rem;
   }
 }
 @media (min-width: 1200px) {
   .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 10rem;
+    row-gap: 1.5rem;
   }
 }
 .gallery-container {
