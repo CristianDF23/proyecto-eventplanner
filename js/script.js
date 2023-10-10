@@ -6,29 +6,29 @@ let btnMenu = document.getElementById('btncheck');
 let logo = document.getElementById('logo')
 
 window.onscroll = () => {
-    if (window.innerWidth  > 850) {
-        if (document.documentElement.scrollTop > 50) {
+    if (window.innerWidth > 850) {
+        if (document.documentElement.scrollTop === 0) {
+            navBar.style.background = 'transparent'
+            for (const elem of link) {
+                elem.style.color = 'white';
+                logo.style.filter = 'invert(100%)'
+            }
+        } else {
             navBar.style.background = 'white';
             for (const elem of link) {
                 elem.style.color = 'black';
             }
             logo.style.filter = 'none'
-        } else {
-            navBar.style.background = 'transparent'
-            for (const elem of link) {
-                elem.style.color = 'white';
-            }
-            logo.style.filter = 'invert(100%)'
         }
-    }else{
-        if (document.documentElement.scrollTop > 50){
-            navBar.style.background = 'white';
-            btnMenu.style.color = 'black';
-            logo.style.filter = 'none'
-        }else{
+    } else {
+        if (document.documentElement.scrollTop === 0) {
             navBar.style.background = 'transparent'
-            btnMenu.style.color = 'white';
+            btnMenu.style.color = 'white'
             logo.style.filter = 'invert(100%)'
+        } else {
+            navBar.style.background = 'white';
+            btnMenu.style.color = 'black'
+            logo.style.filter = 'none'
         }
     }
 }
