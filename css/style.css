@@ -92,7 +92,7 @@ a:hover {
   .checkbtn {
     display: block;
   }
-  ul {
+  .navMobile {
     z-index: 100;
     position: fixed;
     width: 100%;
@@ -638,13 +638,13 @@ a:hover {
   width: 60px;
 }
 
-.information-list {
+.contact-container .information-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
-.information-list__link {
+.contact-container .information-list__link {
   margin-left: 3px;
   width: 100%;
   display: flex;
@@ -653,10 +653,10 @@ a:hover {
   gap: 0.5rem;
   z-index: 3;
 }
-.information-list__img {
+.contact-container .information-list__img {
   width: 40px;
 }
-.information-list__text {
+.contact-container .information-list__text {
   color: white;
   font-size: 1rem;
 }
