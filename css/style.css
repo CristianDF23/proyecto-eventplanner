@@ -119,7 +119,7 @@ nav ul li a:hover {
 .frontPage {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
