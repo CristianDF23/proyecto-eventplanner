@@ -37,8 +37,13 @@
         <section id="1" class="presentation-container">
             <h2 class="presentation-container__title" data-aos="fade-down" data-aos-duration="3000">ME PRESENTO!</h2>
             <span id="line1" class="line" data-aos="fade-down" data-aos-duration="3000"></span>
-            <img class="presentation-container__img" data-aos="fade-up-right" data-aos-duration="3000"
-                src="./img/presentacion.jpg" alt="">
+            <div class="card " data-aos="fade-up-right" data-aos-duration="3000">
+                <img src="./img/presentacion.jpg" alt="Avatar">
+                <div class="container">
+                    <h4><b>Marianela Bianchini</b></h4>
+                    <p>Event Designer</p>
+                </div>
+            </div>
             <p class="presentation-container__text" data-aos="fade-up-right" data-aos-duration="3000">Bienvenidos! Soy
                 Marian, apasionada de la
                 organización de eventos,
@@ -214,7 +219,8 @@
             </ul>
             <form data-aos="fade-right" data-aos-duration="3000"
                 action="https://formsubmit.co/marianelab.eventplanner@gmail.com" method="POST" class="form">
-                <input class="form-input__name" type="text" name="Nombre" id="Nombre" placeholder="Nombre Completo">
+                <input class="form-input__name" type="text" name="Nombre" id="Nombre" placeholder="Nombre Completo"
+                    aria-selected="false">
                 <input class="form-input__phone" type="tel" name="Celular" id="Telelefono" placeholder="Teléfono">
                 <input class="form-input__email" type="email" name="Correo" id="Correo" placeholder="correo@correo.com">
                 <textarea class="form-input__message" name="Mensaje" id="Consulta" cols="30" rows="10"

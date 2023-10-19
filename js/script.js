@@ -34,26 +34,25 @@ window.onscroll = () => {
             for (const elem of link) {
                 elem.style.color = 'white';
             }
-            logo.style.filter = 'invert(100%)'
         } else {
             navBar.classList.add('navScroll')
             navBar.style.background = 'white';
+            navBar.style.opacity = '.95'
             for (const elem of link) {
                 elem.style.color = 'black';
             }
-            logo.style.filter = 'none'
         }
     } else {
         if (document.documentElement.scrollTop === 0) {
             navBar.classList.remove('navScroll')
             navBar.style.background = 'transparent'
             btnMenu.style.color = 'white'
-            logo.style.filter = 'invert(100%)'
+            navDesplegado = false;
         } else {
             navBar.classList.add('navScroll')
             navBar.style.background = 'white';
+            navBar.style.opacity = '.95'
             btnMenu.style.color = 'black'
-            logo.style.filter = 'none'
         }
     }
 }
