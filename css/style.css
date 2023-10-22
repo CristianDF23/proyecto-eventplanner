@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Great+Vibes&display=swap");
 /*RESET*/
 * {
   margin: 0;
@@ -22,7 +22,7 @@ li {
 }
 
 body {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Great Vibes", cursive;
 }
 
 html, body {
@@ -74,10 +74,9 @@ nav ul li {
 
 nav ul li a {
   color: white;
-  font-size: 18px;
-  padding: 7px 13px;
-  text-transform: uppercase;
-  font-weight: 600;
+  font-size: 25px;
+  padding: 7px 7px;
+  letter-spacing: 4px;
 }
 nav ul li a:hover {
   border-bottom: 3px solid crimson;
@@ -102,7 +101,7 @@ nav ul li a:hover {
     padding-left: 50px;
   }
   nav ul li a {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (max-width: 858px) {
@@ -128,8 +127,8 @@ nav ul li a:hover {
     line-height: 30px;
   }
   nav ul li a {
-    color: #454546 !important;
-    font-size: 20px;
+    color: #252525 !important;
+    font-size: 25px;
   }
   #check:checked ~ ul {
     left: 0;
@@ -202,8 +201,7 @@ nav ul li a:hover {
 
 .text {
   color: white;
-  font-weight: 700;
-  font-size: 30px;
+  font-size: 2.3rem;
   position: absolute;
   top: 25px;
   left: 50%;
@@ -214,11 +212,11 @@ nav ul li a:hover {
 }
 
 .description {
-  font-weight: 600;
   width: 100%;
   color: white;
-  font-size: 20px;
+  font-size: 1.8rem;
   position: absolute;
+  padding: 10px;
   top: 60px;
   left: 0;
 }
@@ -241,47 +239,39 @@ nav ul li a:hover {
 .presentation-container__title {
   margin-top: 50px;
   margin-bottom: 20px;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.3rem;
+  letter-spacing: 0.2rem;
   color: crimson;
 }
 .presentation-container__text {
-  padding: 6px;
-  max-width: 500px;
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.9rem;
+  letter-spacing: 0.2rem;
   margin-bottom: 20px;
+  padding: 10px;
+  max-width: 800px;
 }
 
 /*-VIEW TABLET AND DESKTOP*/
-@media (min-width: 720px) {
+@media (min-width: 930px) {
   .presentation-container {
     margin-bottom: 30px;
     display: grid;
     justify-items: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     grid-template-areas: "title title title title" "line line line line" "img img text text" "img img text text" "img img text text";
   }
   .presentation-container__title {
     grid-area: title;
   }
-  .presentation-container__img {
+  .presentation-container .card {
     grid-area: img;
-    display: block;
-    margin-right: 70px;
-    background-color: rgba(220, 20, 60, 0.651);
-    border: 2px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 300px;
   }
   .presentation-container__text {
     grid-area: text;
-    margin-right: 7px;
-    margin-left: 20px;
+    padding: 40px;
   }
-  #line1 {
+  .presentation-container #line1 {
     grid-area: line;
   }
 }
@@ -297,16 +287,16 @@ nav ul li a:hover {
 .work-container__title {
   margin-top: 50px;
   margin-bottom: 20px;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.3rem;
+  letter-spacing: 0.2rem;
   color: crimson;
 }
 .work-container__text {
-  padding: 6px;
-  max-width: 500px;
-  font-size: 1.3rem;
-  font-weight: 500;
-  margin-bottom: 30px;
+  font-size: 1.9rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  max-width: 750px;
 }
 
 .way-container {
@@ -319,11 +309,9 @@ nav ul li a:hover {
 .way-container__title {
   margin-top: 50px;
   margin-bottom: 20px;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.3rem;
+  letter-spacing: 0.2rem;
   color: crimson;
-  width: 300px;
-  font-size: 1.5rem;
 }
 
 .way-article {
@@ -338,16 +326,17 @@ nav ul li a:hover {
   margin-top: 50px;
 }
 .way-article__title {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
-  margin-top: 10px;
+  margin-top: 30px;
   color: crimson;
+  letter-spacing: 0.4rem;
 }
 .way-article__text {
-  padding: 6px;
-  max-width: 500px;
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+  padding: 10px;
   max-width: 263px;
 }
 
@@ -356,8 +345,7 @@ nav ul li a:hover {
   .way-container {
     margin-bottom: 30px;
     display: grid;
-    gap: 1rem;
-    column-gap: 2rem;
+    column-gap: 3rem;
     justify-items: center;
     align-items: start;
     grid-template-areas: "tit tit tit tit" "lin lin lin lin" "int int id id" "int int id id" "des des eve eve" "des des eve eve";
@@ -377,7 +365,7 @@ nav ul li a:hover {
   .way-container #event {
     grid-area: eve;
   }
-  #line2 {
+  .way-container #line2 {
     grid-area: lin;
   }
 }
@@ -404,7 +392,7 @@ nav ul li a:hover {
   .way-container #event {
     grid-area: eve;
   }
-  #line2 {
+  .way-container #line2 {
     grid-area: lin;
   }
 }
@@ -419,8 +407,8 @@ nav ul li a:hover {
 .services-container__title {
   margin-top: 50px;
   margin-bottom: 20px;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.3rem;
+  letter-spacing: 0.2rem;
   color: crimson;
 }
 
@@ -455,12 +443,13 @@ nav ul li a:hover {
   text-align: center;
   background-color: #ffe8cd;
   margin-bottom: 30px;
+  padding: 20px;
 }
 .gallery-container__title {
   margin-top: 50px;
   margin-bottom: 20px;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.3rem;
+  letter-spacing: 0.2rem;
   color: crimson;
 }
 
@@ -524,7 +513,7 @@ nav ul li a:hover {
   position: relative;
 }
 .contact-container::before {
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   content: "";
   top: 0;
@@ -535,8 +524,8 @@ nav ul li a:hover {
 .contact-container__title {
   margin-top: 50px;
   margin-bottom: 20px;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.3rem;
+  letter-spacing: 0.2rem;
   color: crimson;
   color: white;
   margin-top: -10px;
@@ -559,7 +548,7 @@ nav ul li a:hover {
   gap: 1rem;
 }
 .contact-container .information-list__link {
-  margin-left: 3px;
+  padding: 0;
   width: 100%;
   display: flex;
   justify-content: start;
@@ -572,15 +561,16 @@ nav ul li a:hover {
 }
 .contact-container .information-list__text {
   color: white;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
 }
 
 .form-input__name {
   width: 300px;
   padding: 12px 20px 12px 40px;
   border: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
   border-bottom: 2px solid gainsboro;
   background-position: 6px 9px;
   background-repeat: no-repeat;
@@ -596,7 +586,8 @@ nav ul li a:hover {
   width: 300px;
   padding: 12px 20px 12px 40px;
   border: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
   border-bottom: 2px solid gainsboro;
   background-position: 6px 9px;
   background-repeat: no-repeat;
@@ -612,7 +603,8 @@ nav ul li a:hover {
   width: 300px;
   padding: 12px 20px 12px 40px;
   border: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
   border-bottom: 2px solid gainsboro;
   background-position: 6px 9px;
   background-repeat: no-repeat;
@@ -628,7 +620,8 @@ nav ul li a:hover {
   width: 300px;
   padding: 12px 20px 12px 40px;
   border: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
   border-bottom: 2px solid gainsboro;
   background-position: 6px 9px;
   background-repeat: no-repeat;
@@ -662,8 +655,8 @@ nav ul li a:hover {
   border-radius: 50px;
   background-color: #116d30;
   color: white;
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.3rem;
   cursor: pointer;
 }
 .form-input__send:hover {
@@ -689,7 +682,8 @@ nav ul li a:hover {
     width: 50px;
   }
   .contact-container .information-list__text {
-    font-size: 1.4rem;
+    font-size: 2.2rem;
+    letter-spacing: 0.2rem;
   }
   .contact-container .form {
     max-width: 600px;
@@ -708,7 +702,7 @@ nav ul li a:hover {
 }
 .networks {
   margin-top: 10px;
-  background-color: black;
+  background-color: rgb(26, 26, 26);
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -721,7 +715,7 @@ nav ul li a:hover {
   background-color: white;
 }
 .networks__title {
-  font-size: 1.3rem;
+  font-size: 2.4rem;
   color: white;
 }
 .networks__links {

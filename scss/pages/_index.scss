@@ -1,16 +1,16 @@
 @mixin title {
     margin-top: 50px;
     margin-bottom: 20px;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 2.3rem;
+    letter-spacing: .2rem;
     color: crimson;
 }
 
 @mixin text {
-    padding: 6px;
-    max-width: 500px;
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1.9rem;
+    letter-spacing: .2rem;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 @mixin container {
@@ -39,19 +39,19 @@
 
     &__text {
         @include text();
-        margin-bottom: 20px;
+        max-width: 800px;
     }
 }
 
 /*-VIEW TABLET AND DESKTOP*/
 
-@media (min-width:720px) {
+@media (min-width:930px) {
     .presentation-container {
         margin-bottom: 30px;
         display: grid;
         justify-items: center;
         align-items: center;
-        gap: 10px;
+        gap: 1rem;
         grid-template-areas:
             'title title title title'
             'line line line line'
@@ -63,29 +63,20 @@
             grid-area: title;
         }
 
-        &__img {
+        .card {
             grid-area: img;
-            display: block;
-            margin-right: 70px;
-            background-color: rgba(220, 20, 60, 0.651);
-            border: 2px solid #ddd;
-            border-radius: 4px;
-            padding: 5px;
-            width: 300px;
-
         }
 
         &__text {
             grid-area: text;
-            margin-right: 7px;
-            margin-left: 20px;
+            padding: 40px;
+        }
+
+        #line1 {
+            grid-area: line;
         }
     }
 
-    #line1 {
-        grid-area: line;
-
-    }
 }
 
 /*-WORK METHOD-*/
@@ -101,7 +92,7 @@
 
     &__text {
         @include text();
-        margin-bottom: 30px;
+        max-width: 750px
     }
 }
 
@@ -110,8 +101,6 @@
 
     &__title {
         @include title();
-        width: 300px;
-        font-size: 1.5rem;
     }
 }
 
@@ -124,14 +113,18 @@
     }
 
     &__title {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         margin-bottom: 20px;
-        margin-top: 10px;
-        color: crimson
+        margin-top: 30px;
+        color: crimson;
+        letter-spacing: .4rem;
     }
 
     &__text {
-        @include text();
+        font-size: 1.5rem;
+        letter-spacing: .2rem;
+        margin-bottom: 20px;
+        padding: 10px;
         max-width: 263px;
     }
 }
@@ -142,8 +135,7 @@
     .way-container {
         margin-bottom: 30px;
         display: grid;
-        gap: 1rem;
-        column-gap: 2rem;
+        column-gap: 3rem;
         justify-items: center;
         align-items: start;
         grid-template-areas:
@@ -173,12 +165,11 @@
         #event {
             grid-area: eve;
         }
-    }
 
-    #line2 {
-        grid-area: lin;
+        #line2 {
+            grid-area: lin;
+        }
     }
-
 }
 
 @media (min-width:1200px) {
@@ -212,11 +203,12 @@
         #event {
             grid-area: eve;
         }
+
+        #line2 {
+            grid-area: lin;
+        }
     }
 
-    #line2 {
-        grid-area: lin;
-    }
 }
 
 .services-container {
@@ -257,6 +249,7 @@
     @include container();
     background-color: #ffe8cd;
     margin-bottom: 30px;
+    padding: 20px;
 
     &__title {
         @include title();
@@ -329,7 +322,7 @@
     position: relative;
 
     &::before {
-        background-color: rgba(0, 0, 0, 0.55);
+        background-color: rgba(0, 0, 0, 0.70);
         position: absolute;
         content: "";
         top: 0;
@@ -364,7 +357,7 @@
     gap: 1rem;
 
     &__link {
-        margin-left: 3px;
+        padding: 0;
         width: 100%;
         display: flex;
         justify-content: start;
@@ -379,8 +372,8 @@
 
     &__text {
         color: white;
-        font-size: 1rem;
-        font-weight: 700;
+        font-size: 1.2rem;
+        letter-spacing: .2rem;
     }
 }
 
@@ -389,7 +382,8 @@
     width: 300px;
     padding: 12px 20px 12px 40px;
     border: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
     border-bottom: 2px solid gainsboro;
     background-position: 6px 9px;
     background-repeat: no-repeat;
@@ -438,8 +432,8 @@ $value in $inputs {
         border-radius: 50px;
         background-color: #116d30;
         color: white;
-        font-size: 1.3rem;
-        font-weight: 600;
+        font-size: 1.8rem;
+        letter-spacing: .3rem;
         cursor: pointer;
 
         &:hover {
@@ -470,7 +464,8 @@ $value in $inputs {
             }
 
             &__text {
-                font-size: 1.4rem;
+                font-size: 2.2rem;
+                letter-spacing: .2rem;
             }
         }
 
@@ -497,7 +492,7 @@ $value in $inputs {
 
 .networks {
     margin-top: 10px;
-    background-color: black;
+    background-color: rgb(26, 26, 26);
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -511,7 +506,7 @@ $value in $inputs {
     }
 
     &__title {
-        font-size: 1.3rem;
+        font-size: 2.4rem;
         color: white;
     }
 
@@ -539,7 +534,7 @@ $value in $inputs {
     color: crimson;
     margin-bottom: 30px;
 
-    p{
+    p {
         color: gray;
         margin-top: 20px;
         margin-bottom: 20px;
