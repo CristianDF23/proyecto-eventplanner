@@ -57,3 +57,29 @@ window.onscroll = () => {
     }
 }
 
+const inputNombre = document.getElementById('nombre');
+const inputTelefono = document.getElementById('telefono');
+const inputCorreo = document.getElementById('correo');
+const inputConsulta = document.getElementById('consulta');
+const formAction = document.getElementById('form');
+const enviar = document.getElementById('bottom');
+
+enviar.addEventListener('click', (e) => {
+    if (inputNombre.value === "" || inputTelefono.value === "" || inputCorreo.value === "" || inputConsulta.value === "") {
+        swal({
+            icon: "warning",
+            title: "Complete todos los campos"
+        });
+        e.preventDefault();
+    }
+    else {
+        formAction.setAttribute('action', 'https://formsubmit.co/cristian.eam85@gmail.com')
+        swal({
+            icon: "success",
+            title: "Mensaje Enviado"
+        });
+        setTimeout(() => {
+            window.location.href = '../index.html';
+        }, 2000);
+    }
+})
