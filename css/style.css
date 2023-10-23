@@ -56,9 +56,6 @@ nav {
   display: flex;
   gap: 1rem;
 }
-.logo img {
-  width: 90px;
-}
 .logo:hover {
   border-bottom: none;
 }
@@ -322,7 +319,6 @@ nav ul li a:hover {
   text-align: center;
 }
 .way-article__img {
-  height: 70px;
   margin-top: 50px;
 }
 .way-article__title {
@@ -574,7 +570,6 @@ nav ul li a:hover {
   border-bottom: 2px solid gainsboro;
   background-position: 6px 9px;
   background-repeat: no-repeat;
-  background-size: 30px 30px;
   color: grey;
   background-image: url("../img/name.png");
 }
@@ -591,7 +586,6 @@ nav ul li a:hover {
   border-bottom: 2px solid gainsboro;
   background-position: 6px 9px;
   background-repeat: no-repeat;
-  background-size: 30px 30px;
   color: grey;
   background-image: url("../img/tel.png");
 }
@@ -608,7 +602,6 @@ nav ul li a:hover {
   border-bottom: 2px solid gainsboro;
   background-position: 6px 9px;
   background-repeat: no-repeat;
-  background-size: 30px 30px;
   color: grey;
   background-image: url("../img/email.png");
 }
@@ -625,7 +618,6 @@ nav ul li a:hover {
   border-bottom: 2px solid gainsboro;
   background-position: 6px 9px;
   background-repeat: no-repeat;
-  background-size: 30px 30px;
   color: grey;
   background-image: url("../img/message.png");
 }

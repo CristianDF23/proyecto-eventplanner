@@ -108,7 +108,6 @@
     @include container();
 
     &__img {
-        height: 70px;
         margin-top: 50px;
     }
 
@@ -387,7 +386,6 @@
     border-bottom: 2px solid gainsboro;
     background-position: 6px 9px;
     background-repeat: no-repeat;
-    background-size: 30px 30px;
     color: grey;
 
     &:focus {
@@ -488,7 +486,6 @@ $value in $inputs {
         }
     }
 }
-
 
 .networks {
     margin-top: 10px;
