@@ -79,7 +79,7 @@ enviar.addEventListener('click', (e) => {
         });
         formAction.setAttribute('action', 'https://formsubmit.co/6e6e07a6029819bf76b923d45e149617');
         setTimeout(() => {
-            window.location.href = '../index.html';
+            window.location.href = 'index.html';
         }, 1000);
     }
 })
