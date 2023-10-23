@@ -73,7 +73,7 @@ enviar.addEventListener('click', (e) => {
         e.preventDefault();
     }
     else {
-        formAction.setAttribute('action', 'https://formsubmit.co/cristian.eam85@gmail.com')
+        formAction.setAttribute('action', 'https://formsubmit.co/6e6e07a6029819bf76b923d45e149617')
         swal({
             icon: "success",
             title: "Mensaje Enviado"
