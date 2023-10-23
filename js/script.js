@@ -79,7 +79,7 @@ enviar.addEventListener('click', (e) => {
             title: "Mensaje Enviado",
             buttons: false
         });
-        formAction.setAttribute('action', 'https://formsubmit.co/6e6e07a6029819bf76b923d45e149617');
+        formAction.setAttribute('action', 'https://formsubmit.co/c49ad75802c833620593ea5a588f6196');
 
         setTimeout(() => {
             const enlace = document.createElement('a');
