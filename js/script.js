@@ -68,21 +68,29 @@ enviar.addEventListener('click', (e) => {
     if (inputNombre.value === "" || inputTelefono.value === "" || inputCorreo.value === "" || inputConsulta.value === "") {
         swal({
             icon: "warning",
-            title: "Complete todos los campos"
+            title: "Complete todos los campos",
+            buttons: false
         });
         e.preventDefault();
     }
     else {
         swal({
             icon: "success",
-            title: "Mensaje Enviado"
+            title: "Mensaje Enviado",
+            buttons: false
         });
         formAction.setAttribute('action', 'https://formsubmit.co/6e6e07a6029819bf76b923d45e149617');
+
+        // Simular un clic en un enlace para redirigir después de 1 segundo
         setTimeout(() => {
-            window.location.href = '../index.html';
+            const enlace = document.createElement('a');
+            enlace.href = 'index.html';
+            enlace.style.display = 'none';
+            document.body.appendChild(enlace);
+            enlace.click();
         }, 1000);
     }
-})
+});
 
 
 
