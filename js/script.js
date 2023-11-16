@@ -37,7 +37,7 @@ window.onscroll = () => {
         } else {
             navBar.classList.add('navScroll')
             navBar.style.background = 'white';
-            navBar.style.opacity = '.95'
+            navBar.style.opacity = '.80'
             for (const elem of link) {
                 elem.style.color = 'black';
             }
@@ -51,7 +51,7 @@ window.onscroll = () => {
         } else {
             navBar.classList.add('navScroll')
             navBar.style.background = 'white';
-            navBar.style.opacity = '.95'
+            navBar.style.opacity = '.80'
             btnMenu.style.color = 'black'
         }
     }
