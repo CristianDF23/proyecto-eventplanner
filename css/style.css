@@ -74,9 +74,11 @@ nav ul li a {
   font-size: 25px;
   padding: 7px 7px;
   letter-spacing: 4px;
+  transition: 0.3s ease-out;
+  border: 2px solid transparent;
 }
 nav ul li a:hover {
-  border-bottom: 3px solid crimson;
+  border-bottom: 2px solid crimson;
 }
 
 .checkbtn {
@@ -169,53 +171,41 @@ nav ul li a:hover {
   }
 }
 .container {
-  position: relative;
-  width: 100%;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: start;
+  align-items: center;
+  transition: 0.3s ease-out;
 }
 
-.image {
-  display: block;
-  width: 360px;
-  height: 240px;
+.container:hover {
+  border: 1px solid rgba(128, 128, 128, 0.479);
+  border-radius: 8px;
+  box-shadow: 5px 5px 8px gray;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 15px;
-  right: 0;
-  height: 100%;
-  max-width: 361px;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: rgb(219, 59, 91);
-}
-
-.container:hover .overlay {
-  opacity: 0.9;
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
 }
 
 .text {
-  color: white;
-  font-size: 2.3rem;
-  position: absolute;
-  top: 25px;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+  font-weight: 800;
+  font-size: 2rem;
 }
 
 .description {
-  width: 100%;
-  color: white;
-  font-size: 1.8rem;
-  position: absolute;
-  padding: 10px;
-  top: 60px;
-  left: 0;
+  font-size: 1.6rem;
+}
+
+.image {
+  width: 70px;
 }
 
 .line {
@@ -414,7 +404,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  gap: 1rem;
+  gap: 5rem;
 }
 
 @media (min-width: 720px) {
@@ -457,20 +447,21 @@ nav ul li a:hover {
 .gallery .gallery-section {
   display: flex;
   flex-direction: column;
-  max-width: 350px;
-  max-height: 350px;
+  max-width: 600px;
+  max-height: 600px;
   position: relative;
-  overflow: hidden;
 }
 .gallery .gallery-section__img {
+  border-radius: 8px;
   width: 100%;
   height: 100%;
   filter: brightness(50%);
+  transition: 0.3s ease-out;
 }
 .gallery .gallery-section__img:hover {
   filter: brightness(100%);
   transform: scale(1.1);
-  transition: all ease-in-out 0.5s;
+  box-shadow: 6px 6px 7px grey;
 }
 
 @media (min-width: 720px) {
@@ -725,26 +716,80 @@ nav ul li a:hover {
   filter: invert(80%);
 }
 
-.card {
+.card__presentation {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 300px;
   color: crimson;
   margin-bottom: 30px;
 }
-.card p {
+.card__presentation p {
   font-size: 1.3rem;
   color: gray;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.card__presentation img {
+  width: 100%;
+}
 
-.card:hover {
+.card__presentation:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.container {
+.container__presentation {
   padding: 2px 16px;
+}
+
+.opinions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+.opinions-container__title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 2.3rem;
+  letter-spacing: 0.2rem;
+  color: crimson;
+  margin-top: -20px;
+}
+.opinions-container__title2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 2.3rem;
+  letter-spacing: 0.2rem;
+  color: crimson;
+  margin-top: 140px;
+}
+
+#wp-widget-preview {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: none !important;
+  font-size: 1.8rem;
+  transition: 0.3s ease-out;
+}
+#wp-widget-preview a {
+  font-size: 1.8rem;
+}
+#wp-widget-preview a :hover {
+  transform: scale(1);
+  border: none;
+  filter: none;
+}
+#wp-widget-preview :hover {
+  transform: scale(1);
+  border: none;
+  filter: none;
+}
+
+.casamientos :hover {
+  transform: scale(1.2);
+  filter: drop-shadow(20px 5px 4px #414158);
 }
 
 /*# sourceMappingURL=style.css.map */

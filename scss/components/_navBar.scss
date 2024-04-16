@@ -37,9 +37,11 @@ nav ul li a {
     font-size: 25px;
     padding: 7px 7px;
     letter-spacing: 4px;
+    transition: .3s ease-out;
+    border: 2px solid transparent;
 
     &:hover {
-        border-bottom: 3px solid crimson;
+        border-bottom: 2px solid crimson;
 
     }
 }
